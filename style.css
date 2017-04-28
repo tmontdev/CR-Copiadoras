@@ -1,0 +1,230 @@
+/*
+Theme name: CR Tecnologia
+Theme URI: http://github.com.br
+Descripion: Tema Utilizado para desenvolvimento do Site crcopiadoras.com.br
+Author: Thales Monteiro
+Author URI: http://bitbucket.com/tmontdev
+Version:1.0
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  float: left;
+  padding: 0;
+  margin: 0;
+  top: 0;
+}
+body left 0 {
+  overflow: hidden;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400|Ubuntu:300,400");
+.whole-block {
+  width: 100%;
+  float: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    opacity: 1;
+  }
+}
+@media (min-width: 769px) {
+  .desktop {
+    opacity: 1;
+  }
+  .mobile {
+    display: none !important;
+  }
+}
+header .header-external-line {
+  background-color: #000;
+  height: 12vh;
+  line-height: 12vh;
+}
+@media (max-width: 768px) {
+  header .header-external-line {
+    height: 10vh;
+    line-height: 10vh;
+  }
+}
+header .header-external-line .container .ext-field {
+  display: block;
+}
+header .header-external-line .container .ext-field .ext-link {
+  text-decoration: none;
+  transition: all 250ms ease-in;
+  height: 12vh;
+  color: #fff;
+  display: block;
+}
+@media (max-width: 768px) {
+  header .header-external-line .container .ext-field .ext-link {
+    height: 10vh;
+  }
+}
+@media (min-width: 768px) {
+  header .header-external-line .container .ext-field .ext-link:hover {
+    background-color: #fff;
+    color: #000;
+    border-bottom: solid 1px #cecece;
+  }
+}
+header .header-external-line .container .ext-field .ext-link span {
+  font-size: 20px;
+}
+header .header-external-line .container .ext-field .ext-link .icon-text {
+  font-family: 'Ubuntu';
+  font-size: 18px;
+}
+header .header-section {
+  width: 30vw;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  transition: all 250ms ease-in-out;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px #000;
+  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  header .header-section {
+    width: 80vw;
+  }
+}
+header .header-section .whole-block {
+  position: relative;
+}
+header .header-section .whole-block a {
+  position: absolute;
+  top: 20px;
+  display: block;
+  z-index: 1001;
+}
+header .header-section .whole-block a .close-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  header .header-section .whole-block a .close-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+header .header-section .whole-block a .close-icon .close-line {
+  width: 100%;
+  flaot: left;
+  height: 5px;
+  background-color: #000;
+  transition: all 320ms ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .header-section .whole-block .row .section-icon {
+  padding: 1%;
+}
+header .header-section .whole-block .row .section-icon span,
+header .header-section .whole-block .row .section-icon img {
+  font-size: 8vw;
+  width: 15vw;
+  height: 15vw;
+  border: solid 2px #000;
+  border-radius: 50%;
+  padding: 3.5vw;
+}
+@media (max-width: 768px) {
+  header .header-section .whole-block .row .section-icon span,
+  header .header-section .whole-block .row .section-icon img {
+    font-size: 25vw;
+    width: 40vw;
+    height: 40vw;
+    padding: 7.5vw;
+  }
+}
+header .header-section-left:not(.actived) {
+  left: -120vw;
+}
+@media (max-width: 768px) {
+  header .header-section-left:not(.actived) {
+    left: -100vw;
+  }
+}
+header .header-section-left:not(.actived) .whole-block a {
+  right: 15px;
+  z-index: 1001;
+  display: block;
+}
+header .header-section-left:not(.actived) .whole-block a .close-icon .first-row {
+  transform: rotate(0deg);
+}
+header .header-section-left:not(.actived) .whole-block a .close-icon .last-row {
+  transform: rotate(0deg);
+}
+header .header-section-left {
+  left: 0;
+  border-right: 2px #000 solid;
+}
+header .header-section-left .whole-block a {
+  right: 15px;
+}
+header .header-section-left .whole-block a .close-icon .first-row {
+  transform: rotate(485deg);
+}
+header .header-section-left .whole-block a .close-icon .last-row {
+  transform: rotate(595deg);
+}
+header .header-section-right:not(.actived) {
+  right: -120vw;
+}
+@media (max-width: 768px) {
+  header .header-section-right:not(.actived) {
+    right: -100vw;
+  }
+}
+header .header-section-right {
+  right: 0;
+  border-left: solid 2px #000;
+}
+header .header-section-right .whole-block a {
+  left: 15px;
+}
+header .header-section-right .whole-block a .close-icon .first-row {
+  transform: rotate(485deg);
+}
+header .header-section-right .whole-block a .close-icon .last-row {
+  transform: rotate(595deg);
+}
+header .hollback-area {
+  z-index: 998;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 998;
+  position: fixed;
+  transition: all 250ms ease-in-out;
+}
+header .hollback-area:not(.actived) {
+  z-index: -10;
+  opacity: 0;
+}

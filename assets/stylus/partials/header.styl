@@ -1,0 +1,149 @@
+header
+	.header-external-line
+		background-color black
+		height 12vh
+		line-height 12vh
+		@media(max-width:768px)
+			height 10vh
+			line-height 10vh
+		.container
+			.ext-field
+				display block
+				.ext-link
+					text-decoration none
+					transition all 250ms ease-in
+					height  12vh
+					@media(max-width: 768px)
+						height 10vh
+					@media(min-width 768px)
+						&:hover
+							background-color white 
+							color black
+							border-bottom solid 1px #cecece
+					color white
+					display block
+					span
+						font-size 20px
+					.icon-text
+						font-family $font1
+						font-size 18px
+	.header-section
+		width 30vw
+		position fixed
+		top 0
+		height 100vh
+		transition all 250ms ease-in-out
+		z-index 999
+		background-color white
+		box-shadow 1px 1px 5px black
+		overflow-y auto
+		@media(max-width: 768px)
+			width 80vw
+		.whole-block
+			position relative
+			a
+				position absolute
+				top 20px
+				display block	
+				z-index 1001		
+				.close-icon
+					width 30px
+					height 30px
+					position relative
+					@media(max-width: 768px)
+						width 20px
+						height 20px
+					.close-line
+						width 100%
+						flaot left
+						height 5px
+						background-color black
+						transition all 320ms ease-in-out
+						position absolute
+						top 0
+						left 0
+					
+			.row 
+				.section-icon
+					padding 1% 
+					span, img
+						font-size 8vw
+						width 15vw
+						height 15vw
+						border solid 2px black
+						border-radius 50%
+						padding 3.5vw
+						@media(max-width: 768px)
+							font-size 25vw
+							width 40vw
+							height 40vw
+							padding 7.5vw
+	.header-section-left:not(.actived)
+		left -120vw
+		@media(max-width: 768px)
+			left -100vw	
+		.whole-block
+			a 
+				right 15px
+				z-index 1001
+				display block
+				.close-icon
+					.first-row
+						transform rotate(0deg)
+					.last-row
+						transform rotate(0deg)		
+	.header-section-left
+		left 0
+		border-right 2px black solid
+		.whole-block
+			a 
+				right 15px
+				.close-icon
+					.first-row
+						transform rotate(485deg)
+					.last-row
+						transform rotate(595deg)	
+	.header-section-right:not(.actived)
+		right -120vw
+		@media(max-width: 768px)
+			right -100vw
+	.header-section-right
+		right 0
+		border-left solid 2px black
+		.whole-block
+			a 
+				left 15px
+				.close-icon
+					.first-row
+						transform rotate(485deg)
+					.last-row
+						transform rotate(595deg)
+	.hollback-area
+		z-index 998	
+		top 0
+		left 0
+		height 100vh
+		width 100vw
+		padding 0
+		margin 0
+		background-color alpha(black, 60%)
+		z-index 998
+		position fixed
+		transition all 250ms ease-in-out
+	.hollback-area:not(.actived)
+		z-index -10
+		opacity 0
+		
+		
+		
+
+		
+
+
+
+
+						
+						
+					
+				
+			
