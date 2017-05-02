@@ -28,7 +28,7 @@
 					</a>
 				</div>
 				<div class="ext-field logo-switch col-xs-4">
-					
+
 				</div>
 				<div class="ext-field search-switch col-xs-2">
 					<a href="#" class="ext-link text-center whole-block" data-target="#header-search">
@@ -42,81 +42,155 @@
 						<span class="icon-text desktop">Entrar</span>
 					</a>
 				</div>
-				
+
 			</div>
 		</div>
-		<section class="header-menu header-section header-section-left" id="header-menu">
+		<section class="header-menu header-section header-section-left no-padding" id="header-menu">
 			<div class="whole-block">
-				<a href="#" class="hollback header-section-close col-xs-2">
-					<div class="close-icon">
-						<div class="close-line first-row"></div>
-						<div class="close-line last-row"></div>						
+				<div class="whole-block section-top">
+					<div class="whole-block no-padding">
+						<div class="col-xs-3 icon-top">
+							<a href="https://www.facebook.com/alencar.almeida1/" target="_blank" class="text-center text-white">
+								<span class="fa fa-facebook"></span>
+							</a>
+						</div>
+						<div class="col-xs-3 icon-top">
+							<a href="https://www.instagram.com/crcopiadoras/?hl=pt-br" target="_blank" class="text-center text-white">
+								<span class="fa fa-instagram"></span>
+							</a>
+						</div>
+						<div class="col-xs-3 icon-top">
+							<a href="https://www.linkedin.com" target="_blank" class="text-center text-white">
+								<span class="fa fa-linkedin"></span>
+							</a>
+						</div>
+						<div class="col-xs-3 icon-top">
+							<a href="#"class="text-center text-white close-icon whole-block hollback"></a>
+						</div>
 					</div>
-				</a>
-				<div class="row">
-					<div class="col-xs-12 menu-logo section-icon text-center">
-						
+				</div>
+				<div class="whole-block section-display">
+					<a href="<?php echo get_template_directory_uri(); ?>" class="section-icon whole-block">
+						<img class="text-center section-icon-content" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_circle.png">
+					</a>
+					<div class="menu-options whole-block">
+						<nav class="menu-content whole-block">
+							<ul class="menu-list whole-block">
+								<li class="menu-list-item"><a href="#" class="menu-link whole-block"> <span class="fa fa-home"> </span> Home</a></li>
+								<li class="menu-list-item"><a href="#" class="menu-link whole-block"><span class="fa fa-print"> </span> Equipamentos</a></li>
+								<li class="menu-list-item"><a href="#" class="menu-link whole-block"><span class="fa fa-info-circle"> </span> Sobre</a></li>
+								<li class="menu-list-item"><a href="#" class="menu-link whole-block"><span class="fa fa-newspaper-o"> </span> Notícias</a></li>
+								<li class="menu-list-item"><a href="#" class="menu-link whole-block"><span class="fa fa-phone"> </span> Contato</a></li>
+							</ul>
+
+						</nav>
 					</div>
-					<menu id="menu" class="menu menu-local col-xs-12"></menu>
 				</div>
 			</div>
 		</section>
 		<section class="header-store header-section header-section-left" id="header-store">
 			<div class="whole-block">
-				<a href="#" class="hollback header-section-close col-xs-2">
-					<div class="close-icon">
-						<div class="close-line first-row"></div>
-						<div class="close-line last-row"></div>
-						
-					</div>
-				</a>
-				<div class="row">
-					<div class="col-xs-12 store-icon section-icon text-center">
-						<span class="fa fa-shopping-cart"></span>
-						<h4 class="section-title whole-block text-subtitle">Loja Virtual</h4>
+				<div class="whole-block section-top">
+					<div class="whole-block no-padding">
+						<div class="col-xs-3 icon-top">
+							<a href="https://www.facebook.com/alencar.almeida1/" target="_blank" class="text-center text-white">
+								<span class="fa fa-facebook"></span>
+							</a>
+						</div>
+						<div class="col-xs-3 icon-top">
+							<a href="https://www.instagram.com/crcopiadoras/?hl=pt-br" target="_blank" class="text-center text-white">
+								<span class="fa fa-instagram"></span>
+							</a>
+						</div>
+						<div class="col-xs-3 icon-top">
+							<a href="https://www.linkedin.com" target="_blank" class="text-center text-white">
+								<span class="fa fa-linkedin"></span>
+							</a>
+						</div>
+						<div class="col-xs-3 icon-top">
+							<a href="#"class="text-center text-white close-icon whole-block hollback"></a>
+						</div>
 					</div>
 				</div>
+				<div class="section-display whole-block">
+					<a href="https://www.store.crcopiadoras.com.br" target="_blank" " class="whole-block section-icon">
+						<div class="text-center section-icon-content">
+							<span class="fa fa-shopping-cart icon-figure"></span>
+						</div>
+					</a>
+				</div>
+
 			</div>
 		</section>
 		<section class="header-search header-section header-section-right" id='header-search'>
 			<div class="whole-block">
-				<a href="#" class="hollback header-section-close col-xs-2">
-					<div class="close-icon">
-						<div class="close-line first-row"></div>
-						<div class="close-line last-row"></div>
-						
+				<div class="whole-block section-top">
+					<div class="whole-block no-padding">
+						<div class="col-xs-3 icon-top">
+							<a href="#"class="text-center text-white close-icon whole-block hollback"></a>
+						</div>						<div class="col-xs-3 icon-top">
+							<a href="https://www.facebook.com/alencar.almeida1/" target="_blank" class="text-center text-white">
+								<span class="fa fa-facebook"></span>
+							</a>
+						</div>
+						<div class="col-xs-3 icon-top">
+							<a href="https://www.instagram.com/crcopiadoras/?hl=pt-br" target="_blank" class="text-center text-white">
+								<span class="fa fa-instagram"></span>
+							</a>
+						</div>
+						<div class="col-xs-3 icon-top">
+							<a href="https://www.linkedin.com" target="_blank" class="text-center text-white">
+								<span class="fa fa-linkedin"></span>
+							</a>
+						</div>
 					</div>
-				</a>
-				<div class="row">
-					<div class="col-xs-12 search-icon section-icon text-center">
-						<span class="fa fa-search"></span>
-						<h4 class="section-title whole-block text-subtitle">Pesquisa</h4>
-					</div>
+				</div>
+				<div class="section-display whole-block">
+					<a href="https://www.store.crcopiadoras.com.br" target="_blank" " class="whole-block section-icon">
+						<div class="text-center section-icon-content">
+							<span class="fa fa-search icon-figure"></span>
+						</div>
+					</a>
 				</div>
 			</div>
 		</section>
 		<section class="header-login header-section header-section-right" id='header-login'>
 			<div class="whole-block">
-				<a href="#" class="hollback header-section-close col-xs-2">
-					<div class="close-icon">
-						<div class="close-line first-row"></div>
-						<div class="close-line last-row"></div>
-						
-					</div>
-				</a>
-				<div class="row">
-					<div class="col-xs-12 login-icon section-icon text-center">
-						<span class="fa fa-user"></span>
-						<h4 class="section-title whole-block text-subtitle">Acesso Restrito</h4>
+				<div class="whole-block section-top">
+					<div class="whole-block no-padding">
+						<div class="col-xs-3 icon-top">
+							<a href="#"class="text-center text-white close-icon whole-block hollback"></a>
+						</div>						<div class="col-xs-3 icon-top">
+							<a href="https://www.facebook.com/alencar.almeida1/" target="_blank" class="text-center text-white">
+								<span class="fa fa-facebook"></span>
+							</a>
+						</div>
+						<div class="col-xs-3 icon-top">
+							<a href="https://www.instagram.com/crcopiadoras/?hl=pt-br" target="_blank" class="text-center text-white">
+								<span class="fa fa-instagram"></span>
+							</a>
+						</div>
+						<div class="col-xs-3 icon-top">
+							<a href="https://www.linkedin.com" target="_blank" class="text-center text-white">
+								<span class="fa fa-linkedin"></span>
+							</a>
+						</div>
+
 					</div>
 				</div>
+				<div class="section-display whole-block">
+					<a href="https://www.store.crcopiadoras.com.br" target="_blank" " class="whole-block section-icon">
+						<div class="text-center section-icon-content">
+							<span class="fa fa-user icon-figure"></span>
+						</div>
+					</a>
+				</div>
+
 			</div>
 		</section>
 		<section class="hollback hollback-area">
-			
+
 		</section>
 	</header>
 
-	
-</body>
-</html>
+

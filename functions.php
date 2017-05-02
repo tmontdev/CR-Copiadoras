@@ -6,6 +6,7 @@ function scripts_register_cr(){
         wp_enqueue_script( 'slick', get_template_directory_uri().'/assets/js/slick.min.js', array('jquery'), null, true);
         wp_enqueue_script('app', get_template_directory_uri().'/assets/js/app.js',array('jquery'), null, true);
         wp_enqueue_script('bootstrap', get_template_directory_uri().'/assets/js/bootstrap.min.js',array('jquery'), null, true);
+        wp_enqueue_script('bootstrap', get_template_directory_uri().'/assets/js/jquery.drawsvg.min.js',array('drawsvg'), null, true);
 }
 add_action('wp_enqueue_scripts', 'scripts_register_cr');
 show_admin_bar(false);

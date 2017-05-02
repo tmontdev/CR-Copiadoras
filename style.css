@@ -21,7 +21,7 @@ body {
 body left 0 {
   overflow: hidden;
 }
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400|Ubuntu:300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500|Ubuntu:300,400");
 .whole-block {
   width: 100%;
   float: left;
@@ -34,6 +34,10 @@ body left 0 {
 }
 .text-right {
   text-align: right;
+}
+.no-padding {
+  padding: 0;
+  margin: 0;
 }
 @media (max-width: 768px) {
   .desktop {
@@ -50,6 +54,12 @@ body left 0 {
   .mobile {
     display: none !important;
   }
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
 }
 header .header-external-line {
   background-color: #000;
@@ -98,8 +108,8 @@ header .header-section {
   height: 100vh;
   transition: all 250ms ease-in-out;
   z-index: 999;
-  background-color: #fff;
-  box-shadow: 1px 1px 5px #000;
+  background-color: #000;
+  box-shadow: 0px 0px 10px #000;
   overflow-y: auto;
 }
 @media (max-width: 768px) {
@@ -107,91 +117,168 @@ header .header-section {
     width: 80vw;
   }
 }
-header .header-section .whole-block {
-  position: relative;
-}
-header .header-section .whole-block a {
-  position: absolute;
-  top: 20px;
-  display: block;
-  z-index: 1001;
-}
-header .header-section .whole-block a .close-icon {
-  width: 30px;
-  height: 30px;
-  position: relative;
+header .header-section .section-top {
+  height: 12vh;
+  border: solid 1px #000;
+  padding: 0;
+  border-bottom: solid 1px #fff;
 }
 @media (max-width: 768px) {
-  header .header-section .whole-block a .close-icon {
-    width: 20px;
-    height: 20px;
+  header .header-section .section-top {
+    height: 10vh;
   }
 }
-header .header-section .whole-block a .close-icon .close-line {
-  width: 100%;
-  flaot: left;
-  height: 5px;
-  background-color: #000;
-  transition: all 320ms ease-in-out;
+header .header-section .section-top .icon-top {
+  text-align: center;
+  height: 10vh;
+}
+header .header-section .section-top .icon-top a {
+  text-align: center;
+  line-height: 10vh;
+}
+header .header-section .section-top .icon-top a span {
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  header .header-section .section-top .icon-top a span {
+    font-size: 16px;
+  }
+}
+header .header-section .section-top .icon-top .close-icon {
+  position: relative;
+  height: 100%;
+  display: block;
+  transition: all 350ms ease-in-out;
+}
+header .header-section .section-top .icon-top .close-icon:after {
+  content: " ";
+  background-color: #fff;
+  height: 2px;
+  width: 25%;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(310deg);
+  transition: all 350ms ease-in-out;
+}
+header .header-section .section-top .icon-top .close-icon:before {
+  content: " ";
+  background-color: #fff;
+  height: 2px;
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(405deg);
+  transition: all 350ms ease-in-out;
+}
+header .header-section .section-display {
+  min-height: 88vh;
+  background-color: #000;
+}
+@media (max-width: 768px) {
+  header .header-section .section-display {
+    min-height: 90vh;
+  }
+}
+header .header-section .section-display .section-icon {
+  display: block;
+  text-decoration: none;
+}
+header .header-section .section-display .section-icon .section-icon-content {
+  max-width: 40%;
+  max-height: 40%;
+  margin: 5% 30%;
+  border-radius: 50%;
+  font-size: 100px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+header .header-section .section-display .menu-options {
+  margin: 0;
+  padding: 0;
+}
+header .header-section .section-display .menu-options .menu-content .menu-list {
+  margin: 0;
+  padding: 0;
+}
+header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item {
+  width: 100%;
+  float: left;
+  position: relative;
+  list-style: none;
+  height: 35px;
+  background-color: #000;
+  border-top: solid 1px #000;
+  color: #fff;
+  padding: 0 0 0 50px;
+  text-transform: uppercase;
+  font-family: 'Ubuntu';
+  font-size: 20px;
+  transition: all 250ms ease-in-out;
+}
+header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item .menu-link {
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item .menu-link span {
+  position: absolute;
+  line-height: 35px;
+  top: 0;
+  left: 20px;
+  transition: all 250ms ease-in-out;
+}
+header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item:after {
+  content: " ";
+  background-color: #fff;
+  position: absolute;
+  height: 100%;
+  width: 0px;
   top: 0;
   left: 0;
+  transition: all 250ms ease-in-out;
 }
-header .header-section .whole-block .row .section-icon {
-  padding: 1%;
+header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item:hover,
+header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item:focus {
+  padding-left: 55px;
 }
-header .header-section .whole-block .row .section-icon span,
-header .header-section .whole-block .row .section-icon img {
-  font-size: 8vw;
-  width: 15vw;
-  height: 15vw;
-  border: solid 2px #000;
-  border-radius: 50%;
-  padding: 3.5vw;
+header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item:hover .menu-link span,
+header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item:focus .menu-link span {
+  left: 25px;
 }
-@media (max-width: 768px) {
-  header .header-section .whole-block .row .section-icon span,
-  header .header-section .whole-block .row .section-icon img {
-    font-size: 25vw;
-    width: 40vw;
-    height: 40vw;
-    padding: 7.5vw;
-  }
+header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item:hover:after,
+header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item:focus:after {
+  width: 5px;
 }
 header .header-section-left:not(.actived) {
   left: -120vw;
+}
+header .header-section-left:not(.actived) .close-icon:after {
+  transform: rotate(0deg) !important;
+}
+header .header-section-left:not(.actived) .close-icon:before {
+  transform: rotate(0deg) !important;
 }
 @media (max-width: 768px) {
   header .header-section-left:not(.actived) {
     left: -100vw;
   }
 }
-header .header-section-left:not(.actived) .whole-block a {
-  right: 15px;
-  z-index: 1001;
-  display: block;
-}
-header .header-section-left:not(.actived) .whole-block a .close-icon .first-row {
-  transform: rotate(0deg);
-}
-header .header-section-left:not(.actived) .whole-block a .close-icon .last-row {
-  transform: rotate(0deg);
-}
 header .header-section-left {
   left: 0;
   border-right: 2px #000 solid;
 }
-header .header-section-left .whole-block a {
-  right: 15px;
-}
-header .header-section-left .whole-block a .close-icon .first-row {
-  transform: rotate(485deg);
-}
-header .header-section-left .whole-block a .close-icon .last-row {
-  transform: rotate(595deg);
-}
 header .header-section-right:not(.actived) {
   right: -120vw;
+}
+header .header-section-right:not(.actived) .close-icon:after {
+  transform: rotate(0deg) !important;
+}
+header .header-section-right:not(.actived) .close-icon:before {
+  transform: rotate(0deg) !important;
 }
 @media (max-width: 768px) {
   header .header-section-right:not(.actived) {
@@ -202,15 +289,6 @@ header .header-section-right {
   right: 0;
   border-left: solid 2px #000;
 }
-header .header-section-right .whole-block a {
-  left: 15px;
-}
-header .header-section-right .whole-block a .close-icon .first-row {
-  transform: rotate(485deg);
-}
-header .header-section-right .whole-block a .close-icon .last-row {
-  transform: rotate(595deg);
-}
 header .hollback-area {
   z-index: 998;
   top: 0;
@@ -219,7 +297,7 @@ header .hollback-area {
   width: 100vw;
   padding: 0;
   margin: 0;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(46,46,46,0.6);
   z-index: 998;
   position: fixed;
   transition: all 250ms ease-in-out;
@@ -227,4 +305,59 @@ header .hollback-area {
 header .hollback-area:not(.actived) {
   z-index: -10;
   opacity: 0;
+}
+#home {
+  padding-top: 12vh;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  #home {
+    padding-top: 10vh;
+  }
+}
+#home .home-slider {
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+#home .home-slider .slick-list {
+  height: 100% !important;
+  display: block;
+}
+#home .home-slider .slick-list .slick-track {
+  height: 100%;
+  display: block;
+}
+#home .home-slider .slick-list .slick-track .slide {
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  display: block;
+}
+#home .home-slider .slick-list .slick-track .slide .overlay {
+  display: block;
+  height: 100%;
+  width: 100%;
+  float: left;
+  background-color: rgba(0,0,0,0.4);
+}
+#home .home-slider .slick-list .slick-track .slide .overlay .container {
+  height: 100%;
+}
+#home .home-slider .slick-list .slick-track .slide .overlay .container .text-title {
+  padding-top: 20%;
+  color: #fff;
+  font-family: 'Ubuntu';
+  text-shadow: 0px 0px 5px #000;
+  font-size: 22px;
+}
+#home .home-slider .slick-list .slick-track .slide .overlay .container .text-subtitle {
+  color: #fff;
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  text-shadow: 0px 0px 5px #000;
+  font-size: 20px;
+}
+#home .home-slider .slick-list .slick-track .slide1 {
+  background-image: url("assets/img/banner-reduza.jpg");
 }
