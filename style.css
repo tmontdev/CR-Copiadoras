@@ -361,3 +361,12 @@ header .hollback-area:not(.actived) {
 #home .home-slider .slick-list .slick-track .slide1 {
   background-image: url("assets/img/banner-reduza.jpg");
 }
+#home .home-slider .slick-list .slick-track .slide2 {
+  background-image: url("assets/img/01.jpg");
+}
+#home .home-slider .slick-list .slick-track .slide3 {
+  background-image: url("assets/img/slide3.jpg");
+}
+#home .home-slider .slick-list .slick-track .slide4 {
+  background-image: url("assets/img/slide4.jpg");
+}
