@@ -77,7 +77,7 @@
 						<nav class="menu-content whole-block">
 							<ul class="menu-list whole-block">
 								<li class="menu-list-item"><a href="#" class="menu-link whole-block"> <span class="fa fa-home"> </span> Home</a></li>
-								<li class="menu-list-item"><a href="#" class="menu-link whole-block"><span class="fa fa-print"> </span> Equipamentos</a></li>
+								<li class="menu-list-item"><a href="<?php echo get_permalink(get_page_by_path('equipamentos')); ?>" class="menu-link whole-block"><span class="fa fa-print"> </span> Equipamentos</a></li>
 								<li class="menu-list-item"><a href="#" class="menu-link whole-block"><span class="fa fa-info-circle"> </span> Sobre</a></li>
 								<li class="menu-list-item"><a href="#" class="menu-link whole-block"><span class="fa fa-newspaper-o"> </span> Notícias</a></li>
 								<li class="menu-list-item"><a href="#" class="menu-link whole-block"><span class="fa fa-phone"> </span> Contato</a></li>

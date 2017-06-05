@@ -15,7 +15,6 @@
 				display block
 				.slide
 					background-size cover
-					background-position center center
 					height 100%
 					display block
 					.overlay
@@ -26,6 +25,8 @@
 						background-color alpha(black, 40%)
 						.container
 							height 100%
+							text-align center
+							
 							.text-title
 								padding-top 20%
 								color white
@@ -38,9 +39,21 @@
 								font-weight 300
 								text-shadow 0px 0px 5px black
 								font-size 20px
+							a
+								padding 10px 5px
+								color white
+								border-radius 5px								
+								margin 20px 45%
+								width 150px
+								float left
+								z-index 1050
+								text-decoration none
+								transition all 250ms ease-in-out 
+								box-shadow 0px 0px 5px black
+								&:hover
+									box-shadow 0px 0px 5px white
+								
 
-				.slide1
-					background-image url('assets/img/banner-reduza.jpg')
 				.slide2
 					background-image url('assets/img/01.jpg')
 				.slide3
