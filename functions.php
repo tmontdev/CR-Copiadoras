@@ -17,7 +17,51 @@ function wpdocs_custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
 ?>
-<?php 
+
+
+<?php
+    add_action('init', 'slides_register');
+ 
+    function slides_register() { 
+        $labels = array(
+            'name' => _x('Slides', 'Home Slides'),
+            'singular_name' => _x('Ślide', 'Home Slide'),
+            'add_new' => _x('Adicionar Slide', 'Novo Slide'),
+            'add_new_item' => __('Novo Slide'),
+            'edit_item' => __('Editar Slide'),
+            'new_item' => __('Novo Slide'),
+            'view_item' => __('Ver Slide'),
+            'search_items' => __('Procurar Slides'),
+            'not_found' =>  __('Nenhum Slide encontrado'),
+            'not_found_in_trash' => __('Nenhum Slide encontrado na lixeira'),
+            'parent_item_colon' => '',
+            'menu_name' => 'Slides'
+        );
+
+        $args = array(
+            'labels' => $labels,
+            'public' => true,
+            'public_queryable' => true,
+            'show_ui' => true,           
+            'query_var' => true,
+            'rewrite' => true,
+            'capability_type' => 'post',
+            'has_archive' => true,
+            'hierarchical' => false,
+            'menu_position' => null,
+'register_meta_box_cb' => 'noticias_meta_box',       
+            'supports' => array('title','editor','thumbnail')
+          );
+ 
+register_post_type( 'slides' , $args );
+flush_rewrite_rules();
+}
+?>
+
+
+
+
+<?php /*
 add_action('init', 'slides_registrer');
 function slides_registrer(){
      $labels = array(
@@ -46,7 +90,7 @@ function slides_registrer(){
         'hierarchical' => false,
         'rewrite' => array('slug'=>'slides'), // Nome que vai ser usado para gerar o link permanente ex: http://localhost/slide-aula/slides
         'menu_position' => 6,
-        'supports' => array('title', 'editor', 'thumbnail'),
+        'supports' => array('title', 'editor', 'thumbnail','comments', 'excerpt', 'custom-fields', 'revisions', 'trackbacks'),
         //'taxonomies' => array('category_noticias'), // Informado qual taxonomia (grupo de categorias) este post type vai usar
       );
     register_post_type('slides',$args);
@@ -78,5 +122,5 @@ function wptester_settings_page() {
         if ( isset ( $_GET['tab'] ) ) wptester_admin_tabs($_GET['tab']); else wptester_admin_tabs('homepage');
  
 //...
-
+*/
  ?>

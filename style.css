@@ -21,7 +21,7 @@ body {
 body left 0 {
   overflow: hidden;
 }
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500|Ubuntu:300,400");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,700|Roboto:100,100i,400");
 .whole-block {
   width: 100%;
   float: left;
@@ -39,7 +39,7 @@ body left 0 {
   padding: 0;
   margin: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .desktop {
     display: none !important;
   }
@@ -47,7 +47,7 @@ body left 0 {
     opacity: 1;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   .desktop {
     opacity: 1;
   }
@@ -55,257 +55,30 @@ body left 0 {
     display: none !important;
   }
 }
-header {
+header .header-mobile {
+  background-color: #000;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 998;
-}
-header .header-external-line {
-  background-color: #000;
-  height: 12vh;
-  line-height: 12vh;
-}
-@media (max-width: 768px) {
-  header .header-external-line {
-    height: 10vh;
-    line-height: 10vh;
-  }
-}
-header .header-external-line .container .ext-field {
-  display: block;
-}
-header .header-external-line .container .ext-field .ext-link {
-  text-decoration: none;
-  transition: all 250ms ease-in;
-  height: 12vh;
-  color: #fff;
-  display: block;
-}
-@media (max-width: 768px) {
-  header .header-external-line .container .ext-field .ext-link {
-    height: 10vh;
-  }
-}
-@media (min-width: 768px) {
-  header .header-external-line .container .ext-field .ext-link:hover {
-    background-color: #fff;
-    color: #000;
-    border-bottom: solid 1px #cecece;
-  }
-}
-header .header-external-line .container .ext-field .ext-link span {
-  font-size: 20px;
-}
-header .header-external-line .container .ext-field .ext-link .icon-text {
-  font-family: 'Ubuntu';
-  font-size: 18px;
-}
-header .header-section {
-  width: 30vw;
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  transition: all 250ms ease-in-out;
-  z-index: 999;
-  background-color: #000;
-  box-shadow: 0px 0px 10px #000;
-  overflow-y: auto;
-}
-@media (max-width: 768px) {
-  header .header-section {
-    width: 80vw;
-  }
-}
-header .header-section .section-top {
-  height: 12vh;
-  border: solid 1px #000;
-  padding: 0;
-  border-bottom: solid 1px #fff;
-}
-@media (max-width: 768px) {
-  header .header-section .section-top {
-    height: 10vh;
-  }
-}
-header .header-section .section-top .icon-top {
-  text-align: center;
   height: 10vh;
+  box-shadow: 1px 1px 10px #000;
+  z-index: 999;
 }
-header .header-section .section-top .icon-top a {
-  text-align: center;
-  line-height: 10vh;
+header .header-mobile .row .mobile-switch {
+  height: 10vh;
+  border-right: #fff solid 1px;
 }
-header .header-section .section-top .icon-top a span {
-  font-size: 20px;
-}
-@media (max-width: 768px) {
-  header .header-section .section-top .icon-top a span {
-    font-size: 16px;
-  }
-}
-header .header-section .section-top .icon-top .close-icon {
-  position: relative;
-  height: 100%;
-  display: block;
-  transition: all 350ms ease-in-out;
-}
-header .header-section .section-top .icon-top .close-icon:after {
-  content: " ";
-  background-color: #fff;
-  height: 2px;
-  width: 25%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: rotate(310deg);
-  transition: all 350ms ease-in-out;
-}
-header .header-section .section-top .icon-top .close-icon:before {
-  content: " ";
-  background-color: #fff;
-  height: 2px;
-  width: 25%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: rotate(405deg);
-  transition: all 350ms ease-in-out;
-}
-header .header-section .section-display {
-  min-height: 88vh;
-  background-color: #000;
-}
-@media (max-width: 768px) {
-  header .header-section .section-display {
-    min-height: 90vh;
-  }
-}
-header .header-section .section-display .section-icon {
-  display: block;
-  text-decoration: none;
-}
-header .header-section .section-display .section-icon .section-icon-content {
-  max-width: 40%;
-  max-height: 40%;
-  margin: 5% 30%;
-  border-radius: 50%;
-  font-size: 100px;
+header .header-mobile .row .mobile-switch a.menu-switch {
   display: block;
   color: #fff;
+  font-size: 5vh;
   text-decoration: none;
+  padding: 1.5vh;
 }
-header .header-section .section-display .menu-options {
-  margin: 0;
-  padding: 0;
-}
-header .header-section .section-display .menu-options .menu-content .menu-list {
-  margin: 0;
-  padding: 0;
-}
-header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item {
-  width: 100%;
-  float: left;
-  position: relative;
-  list-style: none;
-  height: 35px;
-  background-color: #000;
-  border-top: solid 1px #000;
-  color: #fff;
-  padding: 0 0 0 50px;
-  text-transform: uppercase;
-  font-family: 'Ubuntu';
-  font-size: 20px;
-  transition: all 250ms ease-in-out;
-}
-header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item .menu-link {
-  height: 100%;
-  display: block;
-  text-decoration: none;
-  color: #fff;
-}
-header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item .menu-link span {
-  position: absolute;
-  line-height: 35px;
-  top: 0;
-  left: 20px;
-  transition: all 250ms ease-in-out;
-}
-header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item:after {
-  content: " ";
-  background-color: #fff;
-  position: absolute;
-  height: 100%;
-  width: 0px;
-  top: 0;
-  left: 0;
-  transition: all 250ms ease-in-out;
-}
-header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item:hover,
-header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item:focus {
-  padding-left: 55px;
-}
-header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item:hover .menu-link span,
-header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item:focus .menu-link span {
-  left: 25px;
-}
-header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item:hover:after,
-header .header-section .section-display .menu-options .menu-content .menu-list .menu-list-item:focus:after {
-  width: 5px;
-}
-header .header-section-left:not(.actived) {
-  left: -120vw;
-}
-header .header-section-left:not(.actived) .close-icon:after {
-  transform: rotate(0deg) !important;
-}
-header .header-section-left:not(.actived) .close-icon:before {
-  transform: rotate(0deg) !important;
-}
-@media (max-width: 768px) {
-  header .header-section-left:not(.actived) {
-    left: -100vw;
-  }
-}
-header .header-section-left {
-  left: 0;
-  border-right: 2px #000 solid;
-}
-header .header-section-right:not(.actived) {
-  right: -120vw;
-}
-header .header-section-right:not(.actived) .close-icon:after {
-  transform: rotate(0deg) !important;
-}
-header .header-section-right:not(.actived) .close-icon:before {
-  transform: rotate(0deg) !important;
-}
-@media (max-width: 768px) {
-  header .header-section-right:not(.actived) {
-    right: -100vw;
-  }
-}
-header .header-section-right {
-  right: 0;
-  border-left: solid 2px #000;
-}
-header .hollback-area {
-  z-index: 998;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  padding: 0;
-  margin: 0;
-  background-color: rgba(46,46,46,0.6);
-  z-index: 998;
-  position: fixed;
-  transition: all 250ms ease-in-out;
-}
-header .hollback-area:not(.actived) {
-  z-index: -10;
-  opacity: 0;
-  display: none;
+header .header-mobile .row .mobile-header-logo img {
+  max-width: 7vh;
+  max-eight: 7vh;
+  padding: 1.5vh 0vh;
 }
 #home {
   padding-top: 12vh;
@@ -348,13 +121,13 @@ header .hollback-area:not(.actived) {
 #home .home-slider .slick-list .slick-track .slide .overlay .container .text-title {
   padding-top: 20%;
   color: #fff;
-  font-family: 'Ubuntu';
+  font-family: 'Roboto';
   text-shadow: 0px 0px 5px #000;
   font-size: 22px;
 }
 #home .home-slider .slick-list .slick-track .slide .overlay .container .text-subtitle {
   color: #fff;
-  font-family: 'Ubuntu';
+  font-family: 'Roboto';
   font-weight: 300;
   text-shadow: 0px 0px 5px #000;
   font-size: 20px;

@@ -4,7 +4,7 @@
 	<?php
 	$posts = array();
 	$args = array(
-	    	'post_type' => 'Slides'
+	    	'post_type' => 'slides'
 	);
 	$query = new WP_Query( $args );
 	while($query->have_posts()) {
@@ -14,10 +14,10 @@
 	    		'description' => get_the_excerpt(),
 	      		'link' => get_field('redirect_to'),
 	      		'button' => get_field('redirect_name'),
-	        		'thumb' => get_the_post_thumbnail_url(),
-	        		'color' => get_field('color'),
-	        		'position' => get_field('image_align'),
-	        		'icon' => get_field('icon')
+	        	'thumb' => get_the_post_thumbnail_url(),
+	        	'color' => get_field('color'),
+	        	'position' => get_field('image_align'),
+	        	'icon' => get_field('icon')
 
 	    	);
 	}
