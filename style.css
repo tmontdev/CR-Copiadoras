@@ -80,6 +80,34 @@ header .header-mobile .row .mobile-header-logo img {
   max-eight: 7vh;
   padding: 1.5vh 0vh;
 }
+header .header-content {
+  background-color: #000;
+}
+header .header-content .row .header-menu {
+  padding: 0;
+  margin: 0;
+}
+header .header-content .row .header-menu nav .header-menu-list {
+  list-style: none;
+}
+header .header-content .row .header-menu nav .header-menu-list li {
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  header .header-content .row .header-menu nav .header-menu-list li {
+    display: inline-block;
+  }
+}
+header .header-content .row .header-menu nav .header-menu-list li a {
+  width: 100%;
+  float: left;
+  display: block;
+  text-align: center;
+}
+header .header-content .row .header-menu nav .header-menu-list li a span {
+  color: #fff;
+}
 #home {
   padding-top: 12vh;
   height: 100vh;
