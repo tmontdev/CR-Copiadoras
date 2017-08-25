@@ -49,7 +49,8 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
             'has_archive' => true,
             'hierarchical' => false,
             'menu_position' => null,
-'register_meta_box_cb' => 'noticias_meta_box',       
+            'menu_icon'   => 'dashicons-images-alt2',
+            'register_meta_box_cb' => 'Slides_meta_box',       
             'supports' => array('title','editor','thumbnail')
           );
  
@@ -60,67 +61,43 @@ flush_rewrite_rules();
 
 
 
+<?php
+    add_action('init', 'Equipamentos_register');
+ 
+    function Equipamentos_register() { 
+        $labels = array(
+            'name' => _x('Equipamentos', 'Home Equipamentos'),
+            'singular_name' => _x('Ślide', 'Home Equipamento'),
+            'add_new' => _x('Adicionar Equipamento', 'Novo Equipamento'),
+            'add_new_item' => __('Novo Equipamento'),
+            'edit_item' => __('Editar Equipamento'),
+            'new_item' => __('Novo Equipamento'),
+            'view_item' => __('Ver Equipamento'),
+            'search_items' => __('Procurar Equipamentos'),
+            'not_found' =>  __('Nenhum Equipamento encontrado'),
+            'not_found_in_trash' => __('Nenhum Equipamento encontrado na lixeira'),
+            'parent_item_colon' => '',
+            'menu_name' => 'Equipamentos'
+        );
 
-<?php /*
-add_action('init', 'slides_registrer');
-function slides_registrer(){
-     $labels = array(
-        'name' => _x('Slides', 'post type general name'),
-        'singular_name' => _x('Slides', 'post type singular name'),
-        'add_new' => _x('Adicionar slide', 'slide'),
-        'add_new_item' => __('Adicionar novo slide'),
-        'edit_item' => __('Editar slide'),
-        'new_item' => __('Novo slide'),
-        'view_item' => __('Ver slide'),
-        'search_items' => __('Procurar slide'),
-        'not_found' =>  __('Nada encontrado'),
-        'not_found_in_trash' => __('Nada encontrado no lixo'),
-        'parent_item_colon' => ''
-    );
-    $args = array(
-        'labels' => $labels,
-        'public' => true,
-        'publicly_queryable' => true,
-        'show_ui' => true,
-        'query_var' => true,
-        'rewrite' => true,
-        'has_archive' => true, // Abilitando o uso do template de arquivo o archive-slides.php
-        'menu_icon'   => 'dashicons-format-video',
-        'capability_type' => 'post',
-        'hierarchical' => false,
-        'rewrite' => array('slug'=>'slides'), // Nome que vai ser usado para gerar o link permanente ex: http://localhost/slide-aula/slides
-        'menu_position' => 6,
-        'supports' => array('title', 'editor', 'thumbnail','comments', 'excerpt', 'custom-fields', 'revisions', 'trackbacks'),
-        //'taxonomies' => array('category_noticias'), // Informado qual taxonomia (grupo de categorias) este post type vai usar
-      );
-    register_post_type('slides',$args);
+        $args = array(
+            'labels' => $labels,
+            'public' => true,
+            'public_queryable' => true,
+            'show_ui' => true,           
+            'query_var' => true,
+            'rewrite' => true,
+            'capability_type' => 'post',
+            'has_archive' => true,
+            'hierarchical' => false,
+            'menu_position' => null,
+            'menu_icon'   => 'dashicons-archive',
+            'register_meta_box_cb' => 'Equipamentos_meta_box',       
+            'supports' => array('title','editor','thumbnail')
+          );
+ 
+register_post_type( 'Equipamentos' , $args );
+flush_rewrite_rules();
 }
- ?>
+?>
 
-<?php 
-function wptester_admin_tabs( $current = 'homepage' ) {
-    $tabs = array( 'homepage' => 'Home', 'about' => 'About', 'services' => 'Services', 'downloads' => 'Downloads', 'news' => 'News', 'contact' => 'Contact' );
-    $links = array();
-    echo '<div id="icon-themes" class="icon32"><br></div>';
-    echo '<h2 class="nav-tab-wrapper">';
-    foreach( $tabs as $tab => $name ){
-        $class = ( $tab == $current ) ? ' nav-tab-active' : '';
-        echo "<a class='nav-tab$class' href='?page=theme-settings&tab=$tab'>$name</a>";
- 
-    }
-    echo '</h2>';
-}
- ?>
-
-<?php 
-function wptester_settings_page() {
-    global $pagenow;
-    $settings = get_option( "wptester_theme_settings" );
- 
-        //some html and code goes here...
- 
-        if ( isset ( $_GET['tab'] ) ) wptester_admin_tabs($_GET['tab']); else wptester_admin_tabs('homepage');
- 
-//...
-*/
- ?>

@@ -5,6 +5,17 @@
 
 //Header Code
 (function($){
+    // Para Desktops
+    if($(window).width()>991){
+        var menuHeight = $('.header-menu-area').height();
+        var infoHeight = $('.header-info-area').height();
+        var headerHeight = infoHeight + menuHeight;
+        var windowHeight = $(window).height();
+        var homeHeight = windowHeight - headerHeight;
+        $('.header-info-area').css('margin-top', menuHeight);
+        $('#home').css('height', homeHeight);
+    }
+
     
 })(jQuery);
 
@@ -25,4 +36,6 @@
     nextArrow:'.controllers .next',
   });
 })(jQuery);
+
+
 

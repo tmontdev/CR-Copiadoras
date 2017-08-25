@@ -14,8 +14,8 @@
 <body>
 	<header class="header whole-block" id="header">
 		<section class="header-mobile mobile whole-block">
-			<div class="row">
-				<div class="col-xs-2 mobile-switch">
+			<div class="row whole-block no-padding">
+				<div class="col-xs-2 mobile-switch text-center no-padding">
 					<a href="#" class="menu-switch text-center whole-block">
 						<span class="fa fa-bars switch"></span>
 					</a>
@@ -30,33 +30,64 @@
 			</div>
 		</section>
 		<section class="header-content whole-block">
-			<div class="row">
-				<div class="header-info-desktop desktop">
-					
-				</div> 
-			</div>
-			<div class="row">
-				<menu class="header-menu whole-block">
-					<nav>
-						<ul class="header-menu-list">
-							<li class="col-xs-12 col-lg-2 header-logo header-link">
-								<a href="#"><span class="fa fa-home link-icon"></span><span class="link-name"> Home</span></a>
-							</li>
-							<li class="col-xs-12 col-lg-2 about-link header-link">
-								<a href="#"><span class="fa fa-question-circle link-icon"></span><span class="link-name"> Sobre</span></a>
-							</li>
-							<li class="col-xs-12 col-lg-2 equipment-link header-link">
-								<a href="#"><span class="fa fa-print link-icon"></span><span class="link-name"> Equipamentos</span></a>
-							</li>
-							<li class="col-xs-12 col-lg-2 services-link header-link">
-								<a href="#"><span class="fa fa-cog link-icon"></span><span class="link-name"> Serviços</span></a>
-							</li>
-							<li class="col-xs-12 col-lg-2 contact-link header-link">
-								<a href="#"><span class="fa fa-phone link-icon"></span><span class="link-name"> Contato</span></a>
-							</li>
-						</ul>
-					</nav>
-				</menu>
+			<div class="mobile-scroll">				
+				<div class="row header-menu-area whole-block no-padding">
+					<div class="container">
+						<menu class="header-menu whole-block">
+							<nav>
+								<ul class="header-menu-list">
+									<li class="col-xs-12 col-lg-2 header-logo header-link">
+										<a href="#"><span class="fa fa-home link-icon"></span><span class="link-name"> Home</span></a>
+									</li>
+									<li class="col-xs-12 col-lg-2 about-link header-link">
+										<a href="#"><span class="fa fa-question-circle link-icon"></span><span class="link-name"> Sobre</span></a>
+									</li>
+									<li class="col-xs-12 col-lg-2 equipment-link header-link">
+										<a href="#"><span class="fa fa-print link-icon"></span><span class="link-name"> Máquinas</span></a>
+									</li>
+									<li class="col-xs-12 col-lg-2 services-link header-link">
+										<a href="#"><span class="fa fa-cog link-icon"></span><span class="link-name"> Serviços</span></a>
+									</li>
+									<li class="col-xs-12 col-lg-2 contact-link header-link">
+										<a href="#"><span class="fa fa-phone link-icon"></span><span class="link-name"> Contato</span></a>
+									</li>
+									<li class="col-xs-12 col-lg-2 contact-link header-link">
+										<div class="col-xs-4"><a target="_blank" href="<?php echo do_shortcode('[easy_options id="fblink"]');?>" class="social-icon"><span class="fa fa-facebook"></span></a></div>
+										<div class="col-xs-4"><a target="_blank" href="<?php echo do_shortcode('[easy_options id="lilink"]');?>" class="social-icon"><span class="fa fa-instagram"></span></a></div>
+										<div class="col-xs-4"><a target="_blank" href="<?php echo do_shortcode('[easy_options id="instalink"]');?>" class="social-icon"><span class="fa fa-linkedin"></span></a></div>
+									</li>
+								</ul>
+							</nav>
+						</menu>
+					</div>
+				</div>
+				<div class="row header-info-area whole-block no-padding">
+					<div class="container">
+						<div class="row">
+							<div class="desktop col-lg-4 header-info-block header-info-logo">
+								<a href="#" class="info-home-logo">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_circle.png" alt="">
+								</a>
+							</div>
+							<div class="col-xs-12 col-lg-4 header-info-block header-info-address">
+								<a target="_blank" href="<?php echo do_shortcode('[easy_options id="addresslink"]');?>" class="header-where">
+									<span class="address-first-part whole-block"><?php echo do_shortcode('[easy_options id="addressfirstpart"]');?></span>
+									<span class="address-first-part whole-block"><?php echo do_shortcode('[easy_options id="addresssecondpart"]');?></span>
+									<span class="fa fa-map-marker"></span>
+								</a>
+							</div>
+							<div class="col-xs-12 col-lg-4 header-info-block header-info-contact">
+								<a href="tel:<?php echo do_shortcode('[easy_options id="contactphone1unform"]');?>" class="contact-phone">
+									<span class="contact-phone-number whole-block"><?php echo do_shortcode('[easy_options id="contactphone1"]');?></span>
+								</a>
+								<a href="mailto:<?php echo do_shortcode('[easy_options id="contactmail"]');?>" class="contact-mail">
+									<span class="contact-phone-number whole-block"><?php echo do_shortcode('[easy_options id="contactmail"]');?></span>
+								</a>
+								<span class="fa fa-phone"></span>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
