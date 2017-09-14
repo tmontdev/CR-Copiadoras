@@ -19,12 +19,12 @@
 				<span class="fa fa-bars"></span>
 			</a>
 		</div>
-		<div class="mobile-header-logo">
+		<div class="mobile-header-logo whole-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12">
-						<a href="#" class="whole-block"> 
-							<img src="<?php get_template_directory ?> " alt="">
+					<div class="col-xs-12 logo-square">
+						<a href="<?php echo get_home_url();?>" class="whole-block"> 
+							<img src="<?php echo get_template_directory_uri();?>/assets/img/logo-string-white.png">
 						</a>
 					</div>
 				</div>
