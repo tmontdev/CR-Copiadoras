@@ -42,6 +42,96 @@
                                 max-height 10vh
                                 width auto
                                 padding 2vh 0vh 2vh 4vh
+    .header-info
+        background-color black
+        height 15vh
+        .container
+            .logo-header-desktop
+                padding 1vh
+                position relative
+                a
+                    display block
+                    width 100%
+                    float left 
+                    height 13vh
+                    img
+                        display block
+                        max-width 100%
+                        max-height 100%
+                        padding 3vh 0vh
+            .header-info-address 
+                position relative
+                a
+                    .address-line
+                        position relative
+                        font-size 2.2vh
+                        width 100%
+                        float left
+                        color white
+                        text-decoration none 
+                        &:hover
+                            text-decoration none
+                    .header-first-address
+                        padding 4vh 0vh 0vh 6vw
+                    .header-second-address
+                        padding 0vh 0vh 4vh 6vw
+
+                    .absolute
+                        position absolute
+                        top 5.25vh
+                        left 5vw
+                        font-size 4vh
+            .header-info-contact
+                position relative
+                .absolute
+                    position absolute
+                    left 5vw
+                    top 5.25vh
+                    font-size 4vh
+                .contact-line
+                    position relative
+                    font-size 2.2vh
+                    width 100%
+                    float left
+                    color white
+                    text-decoration none 
+                    display block
+                    &:hover
+                        text-decoration none
+                .header-phone
+                    padding 4vh 0vh 0vh 6vw
+                .header-mail
+                    padding 0vh 0vh 4vh 6vw  
+    .header-menu
+        display block
+        border-top solid 1px white
+        background-color black
+        width 100%
+        float left
+        height 60px
+        border-bottom solid 1px white
+        .container
+            height 100%
+            nav 
+                ul
+                    list-style none 
+                    a
+                        color white
+                        text-decoration none
+                        text-transform uppercase
+                        font-family 'Ubuntu'
+                        text-align center
+                        font-size 13px
+                        @media(min-width:1200px)
+                            font-size 17px
+                    a:not(.col-xs-4)   
+                        width 100%
+                        float left 
+                    a.col-xs-4
+                        font-size 15px
+                        @media(min-width 1200px)
+                            font-size 20px
+            
 
 
 

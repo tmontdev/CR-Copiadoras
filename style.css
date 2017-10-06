@@ -107,13 +107,129 @@ body left 0 {
   width: auto;
   padding: 2vh 0vh 2vh 4vh;
 }
+#header .header-info {
+  background-color: #000;
+  height: 15vh;
+}
+#header .header-info .container .logo-header-desktop {
+  padding: 1vh;
+  position: relative;
+}
+#header .header-info .container .logo-header-desktop a {
+  display: block;
+  width: 100%;
+  float: left;
+  height: 13vh;
+}
+#header .header-info .container .logo-header-desktop a img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 3vh 0vh;
+}
+#header .header-info .container .header-info-address {
+  position: relative;
+}
+#header .header-info .container .header-info-address a .address-line {
+  position: relative;
+  font-size: 2.2vh;
+  width: 100%;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+}
+#header .header-info .container .header-info-address a .address-line:hover {
+  text-decoration: none;
+}
+#header .header-info .container .header-info-address a .header-first-address {
+  padding: 4vh 0vh 0vh 6vw;
+}
+#header .header-info .container .header-info-address a .header-second-address {
+  padding: 0vh 0vh 4vh 6vw;
+}
+#header .header-info .container .header-info-address a .absolute {
+  position: absolute;
+  top: 5.25vh;
+  left: 5vw;
+  font-size: 4vh;
+}
+#header .header-info .container .header-info-contact {
+  position: relative;
+}
+#header .header-info .container .header-info-contact .absolute {
+  position: absolute;
+  left: 5vw;
+  top: 5.25vh;
+  font-size: 4vh;
+}
+#header .header-info .container .header-info-contact .contact-line {
+  position: relative;
+  font-size: 2.2vh;
+  width: 100%;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+#header .header-info .container .header-info-contact .contact-line:hover {
+  text-decoration: none;
+}
+#header .header-info .container .header-info-contact .header-phone {
+  padding: 4vh 0vh 0vh 6vw;
+}
+#header .header-info .container .header-info-contact .header-mail {
+  padding: 0vh 0vh 4vh 6vw;
+}
+#header .header-menu {
+  display: block;
+  border-top: solid 1px #fff;
+  background-color: #000;
+  width: 100%;
+  float: left;
+  height: 60px;
+  border-bottom: solid 1px #fff;
+}
+#header .header-menu .container {
+  height: 100%;
+}
+#header .header-menu .container nav ul {
+  list-style: none;
+}
+#header .header-menu .container nav ul a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Ubuntu';
+  text-align: center;
+  font-size: 13px;
+}
+@media (min-width: 1200px) {
+  #header .header-menu .container nav ul a {
+    font-size: 17px;
+  }
+}
+#header .header-menu .container nav ul a:not(.col-xs-4) {
+  width: 100%;
+  float: left;
+}
+#header .header-menu .container nav ul a.col-xs-4 {
+  font-size: 15px;
+}
+@media (min-width: 1200px) {
+  #header .header-menu .container nav ul a.col-xs-4 {
+    font-size: 20px;
+  }
+}
+#home {
+  height: 100vh;
+}
 @media (max-width: 768px) {
   #home {
-    padding-top: 10vh;
+    padding-top: 10vh !important;
   }
 }
 #home .home-slider {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   float: left;
 }
