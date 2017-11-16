@@ -1,137 +1,321 @@
 #header
-    position relative
-    .mobile-fixed-header
-        position fixed
-        height 10vh
-        border-bottom solid 1px white
-        background-color black
-        width 100vw
-        float left 
-        top 0
-        left 0
-        z-index 999
-        .header-switch
-            position relative
-            height 10vh
-            left 0
-            top 0
-            width 20vw
-            padding 2vw
-            text-align center
-            z-index 1001
-            a   
-                width 100%
-                float left 
-                text-align center
-                color white
-                font-size 9vw
-        .mobile-header-logo
-            display block
-            height 10vw
-            position fixed
-            left 0
-            top 0
-            .container
-                height 100%
-                .row
-                    .logo-square
-                        text-align center
-                        a 
-                            display block
-                            img 
-                                max-height 10vh
-                                width auto
-                                padding 2vh 0vh 2vh 4vh
-    .header-info
-        background-color black
-        height 15vh
-        .container
-            .logo-header-desktop
-                padding 1vh
-                position relative
-                a
-                    display block
-                    width 100%
-                    float left 
-                    height 13vh
-                    img
-                        display block
-                        max-width 100%
-                        max-height 100%
-                        padding 3vh 0vh
-            .header-info-address 
-                position relative
-                a
-                    .address-line
-                        position relative
-                        font-size 2.2vh
-                        width 100%
-                        float left
-                        color white
-                        text-decoration none 
-                        &:hover
-                            text-decoration none
-                    .header-first-address
-                        padding 4vh 0vh 0vh 6vw
-                    .header-second-address
-                        padding 0vh 0vh 4vh 6vw
-
-                    .absolute
-                        position absolute
-                        top 5.25vh
-                        left 5vw
-                        font-size 4vh
-            .header-info-contact
-                position relative
-                .absolute
-                    position absolute
-                    left 5vw
-                    top 5.25vh
-                    font-size 4vh
-                .contact-line
-                    position relative
-                    font-size 2.2vh
-                    width 100%
-                    float left
-                    color white
-                    text-decoration none 
-                    display block
-                    &:hover
-                        text-decoration none
-                .header-phone
-                    padding 4vh 0vh 0vh 6vw
-                .header-mail
-                    padding 0vh 0vh 4vh 6vw  
-    .header-menu
-        display block
-        border-top solid 1px white
-        background-color black
+  position relative
+  .mobile-fixed-header
+    position fixed
+    height 10vh
+    background-color black
+    width 100vw
+    float left
+    top 0
+    left 0
+    z-index 999
+    .hollback-area:not(.on)
+      background-color transparent
+      width 0px !important
+      transition all 100ms ease-in-out
+      opacity 0
+    .hollback-area
+      position fixed
+      width 100vw
+      height 100vh
+      top 0
+      right 0
+      opacity 1
+      float left
+      background-color alpha(black, 70%)
+      transition all 20ms ease-in-out
+    .header-switch
+      position relative
+      height 10vh
+      left 0
+      top 0
+      width 20vw
+      padding 2vw
+      text-align center
+      z-index 1001
+      a
         width 100%
         float left
-        height 60px
-        border-bottom solid 1px white
-        .container
-            height 100%
-            nav 
-                ul
-                    list-style none 
-                    a
-                        color white
-                        text-decoration none
-                        text-transform uppercase
-                        font-family 'Ubuntu'
-                        text-align center
-                        font-size 13px
-                        @media(min-width:1200px)
-                            font-size 17px
-                    a:not(.col-xs-4)   
-                        width 100%
-                        float left 
-                    a.col-xs-4
-                        font-size 15px
-                        @media(min-width 1200px)
-                            font-size 20px
-            
+        text-align center
+        color white
+        font-size 9vw
+    .mobile-header-logo
+      display block
+      height 10vw
+      position fixed
+      left 0
+      top 0
+      .container
+        height 100%
+        .row
+          .logo-square
+            text-align center
+            a
+              display block
+              img
+                max-height 10vh
+                width auto
+                padding 2vh 0vh 2vh 4vh
+  .header-field
+    .header-info
+      background-color black
+      height 15vh
+      transition all 250ms ease-in-out
+      @media(max-width: 992px)
+        position fixed
+        z-index 1050
+        width 40vw
+        box-shadow 0px 0px 10px black
+      @media(max-width: 500px)
+        position fixed
+        z-index 1050
+        width 70vw
+        box-shadow 0px 0px 10px black
+      //Tamanho em mobile definido por JS
+      .container
+        .logo-header-desktop
+          padding 1vh
+          position relative
+          a
+            display block
+            width 100%
+            float left
+            height 13vh
+            img
+              display block
+              max-width 100%
+              max-height 100%
+              padding 3vh 0vh
+        .header-info-address
+          position relative
+          a
+            .address-line
+              @media(max-width:991px)
+                font-size 2vw
+              @media(max-width:500px)
+                font-size 3vw
+              position relative
+              font-size 2.2vh
+              width 100%
+              float left
+              color white
+              text-decoration none
+              &:hover
+                text-decoration none
+            .header-first-address
+              padding 4vh 0vh 0vh 6vw
+            .header-second-address
+              padding 0vh 0vh 4vh 6vw
+            .absolute
+              position absolute
+              top 5.25vh
+              left 1vw
+              font-size 4vh
+        .header-info-contact
+          position relative
+          .absolute
+            position absolute
+            left 1vw
+            top 5.25vh
+            font-size 4vh
+          .contact-line
+            @media(max-width:991px)
+              font-size 2vw
+            @media(max-width:500px)
+              font-size 3vw
+            position relative
+            font-size 2.2vh
+            width 100%
+            float left
+            color white
+            text-decoration none
+            display block
+            &:hover
+              text-decoration none
+          .header-phone
+            padding 4vh 0vh 0vh 6vw
+          .header-mail
+            padding 0vh 0vh 4vh 6vw
+    .header-menu
+      transition all 250ms ease-in-out
+      display block
+      border-top solid 1px white
+      background-color black
+      width 100%
+      float left
+      height 60px
+      border-bottom solid 1px white
+      @media(max-width:500px)
+        width 70vw !important
+        box-shadow 0px 0px 10px black
+      @media(max-width:992px)
+        width 40vw
+        height auto
+        float left
+        box-shadow 0px 0px 10px black
+        position fixed
+        top 10vh
+        z-index 1050
+        border none
+      .container
+        height 100%
+        nav
+          ul
+            list-style none
+            @media(max-width: 992px)
+              padding 0
+            a
+              color white
+              text-decoration none
+              text-transform uppercase
+              font-family 'Ubuntu'
+              text-align center
+              font-size 13px
+              @media(min-width:1200px)
+                font-size 17px
+              @media(max-width: 992px)
+                font-size 17px
+            a:not(.col-xs-4)
+              width 100%
+              float left
+              text-align left
+            a.col-xs-4
+              font-size 15px
+              @media(min-width 1200px)
+                font-size 20px
+              @media(max-width:992px)
+                font-size 25px
+                text-align center
+                padding 5% 0%
+  .header-field:not(.on)
+    transition all 250ms ease-in-out
+    @media(max-width: 992px)
+      width 0px
+      opacity 0
+      position fixed
+      left -101vw
+      transition all 250ms ease-in-out
+    .header-info
+      transition all 250ms ease-in-out
+      background-color black
+      height 15vh
+      transition all 250ms ease-in-out
+      @media(max-width: 992px)
+        position fixed
+        z-index 1050
+        width 40vw
+        left -101vw
 
-
-
+      @media(max-width: 500px)
+        position fixed
+        z-index 1050
+        width 70vw
+        left -101vw
+      //Tamanho em mobile definido por JS
+      .container
+        .logo-header-desktop
+          padding 1vh
+          position relative
+          a
+            display block
+            width 100%
+            float left
+            height 13vh
+            img
+              display block
+              max-width 100%
+              max-height 100%
+              padding 3vh 0vh
+        .header-info-address
+          position relative
+          a
+            .address-line
+              position relative
+              font-size 2.2vh
+              width 100%
+              float left
+              color white
+              text-decoration none
+              &:hover
+                text-decoration none
+            .header-first-address
+              padding 4vh 0vh 0vh 6vw
+            .header-second-address
+              padding 0vh 0vh 4vh 6vw
+            .absolute
+              position absolute
+              top 5.25vh
+              left 5vw
+              font-size 4vh
+        .header-info-contact
+          position relative
+          .absolute
+            position absolute
+            left 5vw
+            top 5.25vh
+            font-size 4vh
+          .contact-line
+            position relative
+            font-size 2.2vh
+            width 100%
+            float left
+            color white
+            text-decoration none
+            display block
+            &:hover
+              text-decoration none
+          .header-phone
+            padding 4vh 0vh 0vh 6vw
+          .header-mail
+            padding 0vh 0vh 4vh 6vw
+    .header-menu
+      transition all 250ms ease-in-out
+      display block
+      border-top solid 1px white
+      background-color black
+      width 100%
+      float left
+      height 60px
+      border-bottom solid 1px white
+      @media(max-width:500px)
+        width 70vw !important
+        left -101vw
+      @media(max-width:992px)
+        width 40vw
+        height auto
+        float left
+        left -101vw
+        position fixed
+        top 10vh
+        z-index 1050
+        border none
+      .container
+        height 100%
+        nav
+          ul
+            list-style none
+            @media(max-width: 992px)
+              padding 0
+            a
+              color white
+              text-decoration none
+              text-transform uppercase
+              font-family 'Ubuntu'
+              text-align center
+              font-size 13px
+              @media(min-width:1200px)
+                font-size 17px
+              @media(max-width: 992px)
+                font-size 17px
+            a:not(.col-xs-4)
+              width 100%
+              float left
+              text-align left
+            a.col-xs-4
+              font-size 15px
+              @media(min-width 1200px)
+                font-size 20px
+              @media(max-width:992px)
+                font-size 25px
+                text-align center
+                padding 5% 0%

@@ -20,8 +20,8 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
 <?php
     add_action('init', 'slides_register');
- 
-    function slides_register() { 
+
+    function slides_register() {
         $labels = array(
             'name' => _x('Slides', 'Home Slides'),
             'singular_name' => _x('Ślide', 'Home Slide'),
@@ -41,7 +41,7 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
             'labels' => $labels,
             'public' => true,
             'public_queryable' => true,
-            'show_ui' => true,           
+            'show_ui' => true,
             'query_var' => true,
             'rewrite' => true,
             'capability_type' => 'post',
@@ -49,10 +49,10 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
             'hierarchical' => false,
             'menu_position' => null,
             'menu_icon'   => 'dashicons-images-alt2',
-            'register_meta_box_cb' => 'Slides_meta_box',       
+            'register_meta_box_cb' => 'Slides_meta_box',
             'supports' => array('title','editor','thumbnail')
           );
- 
+
 register_post_type( 'slides' , $args );
 flush_rewrite_rules();
 }
@@ -62,8 +62,8 @@ flush_rewrite_rules();
 
 <?php
     add_action('init', 'Equipamentos_register');
- 
-    function Equipamentos_register() { 
+
+    function Equipamentos_register() {
         $labels = array(
             'name' => _x('Equipamentos', 'Home Equipamentos'),
             'singular_name' => _x('Ślide', 'Home Equipamento'),
@@ -83,7 +83,7 @@ flush_rewrite_rules();
             'labels' => $labels,
             'public' => true,
             'public_queryable' => true,
-            'show_ui' => true,           
+            'show_ui' => true,
             'query_var' => true,
             'rewrite' => true,
             'capability_type' => 'post',
@@ -91,12 +91,11 @@ flush_rewrite_rules();
             'hierarchical' => false,
             'menu_position' => null,
             'menu_icon'   => 'dashicons-archive',
-            'register_meta_box_cb' => 'Equipamentos_meta_box',       
+            'register_meta_box_cb' => 'Equipamentos_meta_box',
             'supports' => array('title','editor','thumbnail')
           );
- 
-register_post_type( 'Equipamentos' , $args );
+
+register_post_type( 'Equipments' , $args );
 flush_rewrite_rules();
 }
 ?>
-

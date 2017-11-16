@@ -1,0 +1,57 @@
+.equipments-row
+  padding 1vh 0
+  .equipment-item
+    display block
+    position relative
+    cursor pointer
+    padding 4vw
+    border-radius 15px
+    transition all 250ms ease-in-out
+    &:hover
+      box-shadow 0px 0px 10px black
+    @media(max-width:991px)
+      padding 10vw
+    .equipment-item-field
+
+      background-size cover
+      background-position center center
+      position relative
+      transition all 250ms ease-in-out
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+
+      @media(max-width: 992px)
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+      .equipment-entering
+        background-color alpha(black, 50%)
+        width 100%
+        float left
+        position absolute
+        bottom 0
+        left 0
+        text-align center
+        color white
+        line-height 80px
+        height 0
+        opacity 0
+        transition all 250ms ease-in-out
+    &:hover
+      .equipment-item-field
+        transition all 250ms ease-in-out
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+        .equipment-entering
+          height 80px
+          opacity 1
+          transition all 250ms ease-in-out
+      .equipment-item-title
+        color black
+    .equipment-item-title
+      color black
+      text-transform uppercase
+      text-align center
+      width 100%
+      transition all 250ms ease-in-out
+      float left
+      color alpha(black, 60%)
