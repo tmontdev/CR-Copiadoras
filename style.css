@@ -6,6 +6,7 @@ Author: Thales Monteiro
 Author URI: http://bitbucket.com/tmontdev
 Version:1.0
 */
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Ubuntu");
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -20,8 +21,8 @@ body {
 }
 body left 0 {
   overflow: hidden;
+  font-family: 'Roboto';
 }
-@import url("https://fonts.googleapis.com/css?family=Quicksand:300,700|Roboto:100,100i,400");
 .whole-block {
   width: 100%;
   float: left;
@@ -78,6 +79,17 @@ body left 0 {
   .presentation-subtitle {
     text-align: center;
   }
+}
+.circle {
+  width: 45px;
+  height: 45px;
+  float: left;
+  line-height: 45px !important;
+  font-size: 22px !important;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 @media (max-width: 991px) {
   .desktop {
@@ -335,6 +347,11 @@ body left 0 {
   float: left;
   text-align: left;
 }
+@media (min-width: 992px) {
+  #header .header-field .header-menu .container nav ul a:not(.col-xs-4) {
+    text-align: center !important;
+  }
+}
 #header .header-field .header-menu .container nav ul a.col-xs-4 {
   font-size: 15px;
 }
@@ -530,6 +547,99 @@ body left 0 {
     padding: 5% 0%;
   }
 }
+.contact {
+  font-family: 'Montserrat';
+}
+.contact .contact-presentation {
+  margin: 2% 0;
+  border-bottom: solid 1px #808080;
+}
+.contact .write-for-us .left-side {
+  font-family: 'Montserrat';
+}
+.contact .write-for-us .left-side h3 {
+  color: #000;
+  font-family: 'Ubuntu';
+}
+.contact .write-for-us .left-side a {
+  color: #808080;
+}
+.contact .write-for-us .left-side a:hover {
+  text-decoration: none;
+}
+.contact .write-for-us .contact-form .form-field {
+  padding: 5px;
+}
+.contact .write-for-us .contact-form .form-field input,
+.contact .write-for-us .contact-form .form-field textarea {
+  padding: 5px 10px;
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  transition: all 250ms ease-in-out;
+  border: solid 1px #808080;
+  color: #1f1f1f;
+}
+.contact .write-for-us .contact-form .form-field input:hover,
+.contact .write-for-us .contact-form .form-field textarea:hover,
+.contact .write-for-us .contact-form .form-field input:focus,
+.contact .write-for-us .contact-form .form-field textarea:focus {
+  border: 1px solid #000;
+  color: #000;
+}
+.contact .write-for-us .contact-form .form-field .form-send {
+  background-color: #252525;
+  color: #fff;
+  border: solid 1px #808080;
+}
+.contact .write-for-us .contact-form .form-field .form-send:hover,
+.contact .write-for-us .contact-form .form-field .form-send:focus {
+  box-shadow: 0px 0px 5px #000;
+  color: #fff;
+  border: solid 1px #000;
+  background-color: #000;
+}
+.avaliable {
+  margin: 2% 0;
+}
+.avaliable h4 {
+  padding-bottom: 20px;
+  display: block;
+  position: relative;
+  color: #000;
+}
+.avaliable h4:after {
+  content: "";
+  size: 100;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  height: 1px;
+  background-color: #000;
+}
+.avaliable .col-field .line-query {
+  margin: 2% 0;
+}
+.avaliable .col-field .line-query h5 {
+  color: #000;
+}
+.avaliable .col-field .line-query span {
+  color: #808080;
+}
+.avaliable .col-field .line-query .pad {
+  width: 100%;
+  float: left;
+  padding-left: 30px;
+}
+.avaliable .col-field .line-query a .circle {
+  border: solid 1px #000;
+  transition: all 250ms ease-in-out;
+  color: #000;
+}
+.avaliable .col-field .line-query a:hover .circle {
+  background-color: #000;
+  box-shadow: 0px 0px 5 #000;
+  color: #fff;
+}
 .equipments-row {
   padding: 1vh 0;
 }
@@ -538,11 +648,11 @@ body left 0 {
   position: relative;
   cursor: pointer;
   padding: 4vw;
-  border-radius: 15px;
+  border-radius: 5px;
   transition: all 250ms ease-in-out;
 }
 .equipments-row .equipment-item:hover {
-  box-shadow: 0px 0px 10px #000;
+  box-shadow: 0px 0px 5px #808080;
 }
 @media (max-width: 991px) {
   .equipments-row .equipment-item {
@@ -572,7 +682,7 @@ body left 0 {
   left: 0;
   text-align: center;
   color: #fff;
-  line-height: 80px;
+  line-height: 60px;
   height: 0;
   opacity: 0;
   transition: all 250ms ease-in-out;
@@ -583,7 +693,7 @@ body left 0 {
   filter: grayscale(0%);
 }
 .equipments-row .equipment-item:hover .equipment-item-field .equipment-entering {
-  height: 80px;
+  height: 60px;
   opacity: 1;
   transition: all 250ms ease-in-out;
 }
@@ -598,6 +708,7 @@ body left 0 {
   transition: all 250ms ease-in-out;
   float: left;
   color: rgba(0,0,0,0.6);
+  font-family: 'Montserrat';
 }
 #home {
   height: 100vh;
@@ -640,13 +751,13 @@ body left 0 {
 #home .home-slider .slick-list .slick-track .slide .overlay .container .text-title {
   padding-top: 20%;
   color: #fff;
-  font-family: 'Roboto';
+  font-family: 'Ubuntu';
   text-shadow: 0px 0px 5px #000;
   font-size: 22px;
 }
 #home .home-slider .slick-list .slick-track .slide .overlay .container .text-subtitle {
   color: #fff;
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   font-weight: 300;
   text-shadow: 0px 0px 5px #000;
   font-size: 20px;
@@ -659,6 +770,7 @@ body left 0 {
   margin: auto;
   width: 150px;
   z-index: 1050;
+  font-family: 'Montserrat';
   text-decoration: none;
   transition: all 250ms ease-in-out;
   box-shadow: 0px 0px 5px #000;

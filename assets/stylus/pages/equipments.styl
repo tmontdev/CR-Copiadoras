@@ -5,21 +5,19 @@
     position relative
     cursor pointer
     padding 4vw
-    border-radius 15px
+    border-radius 5px
     transition all 250ms ease-in-out
     &:hover
-      box-shadow 0px 0px 10px black
+      box-shadow 0px 0px 5px grey
     @media(max-width:991px)
       padding 10vw
     .equipment-item-field
-
       background-size cover
       background-position center center
       position relative
       transition all 250ms ease-in-out
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
       filter: grayscale(100%);
-
       @media(max-width: 992px)
         -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
         filter: grayscale(0%);
@@ -32,7 +30,7 @@
         left 0
         text-align center
         color white
-        line-height 80px
+        line-height 60px
         height 0
         opacity 0
         transition all 250ms ease-in-out
@@ -42,7 +40,7 @@
         -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
         filter: grayscale(0%);
         .equipment-entering
-          height 80px
+          height 60px
           opacity 1
           transition all 250ms ease-in-out
       .equipment-item-title
@@ -55,3 +53,4 @@
       transition all 250ms ease-in-out
       float left
       color alpha(black, 60%)
+      font-family $font1

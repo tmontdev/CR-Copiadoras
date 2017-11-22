@@ -21,7 +21,7 @@ while($query->have_posts()) {
   );
 
 }
-$posts = array_chunk($posts, 3);
+$posts = array_chunk($posts, 4);
 ?>
 
 
@@ -36,7 +36,7 @@ $posts = array_chunk($posts, 3);
     <?php foreach($posts as $chunk){ ?>
     <div class="row equipments-row">
       <?php foreach ($chunk as $post): ?>
-      <a href"<?php echo $post['title']; ?>" class="col-xs-12 col-lg-4 equipment-item">
+      <a href"<?php echo $post['link']; ?>" class="col-xs-12 col-lg-3 equipment-item">
         <div class="equipment-item-field" style="background-image: url('<?php echo $post['thumb']; ?>');;">
           <div class="equipment-entering">
             <span class="fa fa-info-circle"></span> Saiba Mais!
@@ -51,10 +51,6 @@ $posts = array_chunk($posts, 3);
     <?php } ?>
   </div>
 </section>
-
-
-
-
-  </div>
+</div>
 <?php
 get_footer(); ?>
