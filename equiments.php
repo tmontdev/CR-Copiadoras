@@ -23,8 +23,6 @@ while($query->have_posts()) {
 }
 $posts = array_chunk($posts, 4);
 ?>
-
-
 <section class="first-section equipments">
   <div class="container">
     <div class="row">
@@ -33,24 +31,29 @@ $posts = array_chunk($posts, 4);
         <span class="presentation-subtitle"><?php echo do_shortcode('[easy_options id="equipmentsSubtitle"]'); ?></span>
       </div>
     </div>
-    <?php foreach($posts as $chunk){ ?>
-    <div class="row equipments-row">
-      <?php foreach ($chunk as $post): ?>
-      <a href"<?php echo $post['link']; ?>" class="col-xs-12 col-lg-3 equipment-item">
-        <div class="equipment-item-field" style="background-image: url('<?php echo $post['thumb']; ?>');;">
-          <div class="equipment-entering">
-            <span class="fa fa-info-circle"></span> Saiba Mais!
-          </div>
-        </div>
-        <div class="equipment-item-title">
-          <?php echo $post['title']; ?>
-        </div>
-      </a>
-      <?php endforeach;  wp_reset_query();?>
-    </div>
-    <?php } ?>
   </div>
 </section>
-</div>
-<?php
-get_footer(); ?>
+<section class="equipments-itens">
+  <div class="container">
+    <div class="row">
+      <?php foreach($posts as $chunk){ ?>
+      <div class="row equipments-row">
+        <?php foreach ($chunk as $post): ?>
+        <a href="<?php echo $post['link']; ?>" class="col-xs-12 col-lg-3 equipment-item">
+          <div class="equipment-item-field" style="background-image: url('<?php echo $post['thumb']; ?>');;">
+            <div class="equipment-entering">
+              <span class="fa fa-info-circle"></span> Saiba Mais!
+            </div>
+          </div>
+          <div class="equipment-item-title">
+            <?php echo $post['title']; ?>
+          </div>
+        </a>
+        <?php endforeach;  wp_reset_query();?>
+      </div>
+      <?php } ?>
+    </div>
+  </div>
+</section>
+  <?php
+  get_footer(); ?>

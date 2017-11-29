@@ -1,5 +1,5 @@
 .contact
-  font-family: $font1
+  font-family $font1
   .contact-presentation
     margin 2% 0
     border-bottom solid 1px grey
@@ -38,11 +38,16 @@
 // custorimzação de formulário
   .avaliable
     margin 2% 0
-    h4
+    iframe
+      width: 100%
+      float left
+      display block
+    h3
       padding-bottom 20px
       display block
       position relative
       color black
+      font-family $font2
       &:after
         content""
         size 100
@@ -58,6 +63,7 @@
           color black
         span
           color grey
+          $font1
         .pad
           width 100%
           float left

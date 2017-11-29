@@ -7,13 +7,20 @@
 (function($){
     // Para Desktops
     if($(window).width()>991){
-        var menuHeight = $('.header-menu-area').height();
-        var infoHeight = $('.header-info-area').height();
+        var menuHeight = $('.header-menu').height();
+        var infoHeight = $('.header-info').height();
         var headerHeight = infoHeight + menuHeight;
         var windowHeight = $(window).height();
         var homeHeight = windowHeight - headerHeight;
         $('.header-info-area').css('margin-top', menuHeight);
         $('#home').css('height', homeHeight); //Define o Tamanho da Home
+        $(window).scroll(function(){//making a fixed header
+          if($(this).scrollTop() > infoHeight){
+                  $('.header-menu').addClass("fixed-header");
+          }else{
+                  $('.header-menu').removeClass("fixed-header");
+          }
+        });
     }
     else{
       var fixedHeaderHeight = $(".mobile-fixed-header").height();
@@ -59,6 +66,23 @@
 
 (function($){
   $(".home-slider").slick({
+    autoplay:true,
+    autoplaySpeed:10000,
+    speed:600,
+    slidesToShow:1,
+    slidesToScroll:1,
+    pauseOnHover:false,
+    dots:false,
+    pauseOnDotsHover:true,
+    fade:false,
+    draggable:true,
+    prevArrow:'.controllers .prev',
+    nextArrow:'.controllers .next',
+  });
+})(jQuery);
+
+(function($){
+  $(".about-slider").slick({
     autoplay:true,
     autoplaySpeed:10000,
     speed:600,

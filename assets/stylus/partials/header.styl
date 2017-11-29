@@ -90,6 +90,8 @@
           position relative
           a
             .address-line
+              @media(min-width:1500px)
+                font-size 1.1vw !important
               @media(max-width:991px)
                 font-size 2vw
               @media(max-width:500px)
@@ -119,6 +121,8 @@
             top 5.25vh
             font-size 4vh
           .contact-line
+            @media(min-width:1500px)
+              font-size 1.1vw !important
             @media(max-width:991px)
               font-size 2vw
             @media(max-width:500px)
@@ -136,6 +140,10 @@
             padding 4vh 0vh 0vh 6vw
           .header-mail
             padding 0vh 0vh 4vh 6vw
+    .fixed-header
+      @media(min-width: 992px)
+        position fixed !important
+        z-index 1150
     .header-menu
       transition all 250ms ease-in-out
       display block

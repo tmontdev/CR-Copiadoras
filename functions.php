@@ -17,6 +17,46 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
 ?>
 
+<?php
+    add_action('init', 'about_register');
+
+    function about_register() {
+        $labels = array(
+            'name' => _x('Sobre', 'Sobre'),
+            'singular_name' => _x('Sobre', 'Sobre'),
+            'add_new' => _x('Adicionar Sobre', 'Novo Sobre'),
+            'add_new_item' => __('Novo Sobre'),
+            'edit_item' => __('Editar Sobre'),
+            'new_item' => __('Novo Sobre'),
+            'view_item' => __('Ver Sobre'),
+            'search_items' => __('Procurar Sobre'),
+            'not_found' =>  __('Nenhum Sobre encontrado'),
+            'not_found_in_trash' => __('Nenhum Sobre encontrado na lixeira'),
+            'parent_item_colon' => '',
+            'menu_name' => 'Sobre'
+        );
+
+        $args = array(
+            'labels' => $labels,
+            'public' => true,
+            'public_queryable' => true,
+            'show_ui' => true,
+            'query_var' => true,
+            'rewrite' => true,
+            'capability_type' => 'post',
+            'has_archive' => true,
+            'hierarchical' => false,
+            'menu_position' => null,
+            'menu_icon'   => 'dashicons-format-aside',
+            'register_meta_box_cb' => 'Sobre_meta_box',
+            'supports' => array('title','editor','thumbnail')
+          );
+
+register_post_type( 'about' , $args );
+flush_rewrite_rules();
+}
+?>
+
 
 <?php
     add_action('init', 'slides_register');

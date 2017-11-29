@@ -15,7 +15,6 @@
 <header class="header" id="header">
 	<div class="mobile mobile-fixed-header whole-block">
 		<div class="hollback-area hollback off">
-
 		</div>
 		<div class="header-switch">
 			<a href="#" class="switch">
@@ -51,7 +50,7 @@
 				</div>
 				<div class="col-xs-12 col-lg-3 header-info-contact text-white">
 					<span class="fa fa-phone absolute"></span>
-					<a href="phone:<?php echo do_shortcode('[easy_options id="contactphone1unform"]'); ?>" class="header-phone contact-line">
+					<a href="tel:<?php echo do_shortcode('[easy_options id="contactphone1unform"]'); ?>" class="header-phone contact-line">
 						<span class="header-phone-number"><?php echo do_shortcode('[easy_options id="contactphone1"]'); ?></span>
 					</a>
 					<a href="mailto:<?php echo do_shortcode('[easy_options id="contactmail"]'); ?>" class="header-mail contact-line">
@@ -71,7 +70,7 @@
 							</a>
 						</li>
 						<li class="header-menu-item header-home col-xs-12 col-lg-2">
-							<a href="<?php echo get_home_url();?>" class="hearder-about-link whole-block">
+							<a href="<?php echo get_permalink(get_page_by_path('sobre')); ?>" class="hearder-about-link whole-block">
 								<span class="icon fa fa-question-circle-o"></span>
 								<span class="header-menu-option">sobre</span>
 							</a>

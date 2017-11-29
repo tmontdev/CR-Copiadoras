@@ -6,15 +6,17 @@ get_header();
 ?>
 <section id="contact"class="first-section contact">
   <div class="container">
-    <div class="contact-presentation whole-block">
-      <h2 class="text-title text-center">Fale Conosco</h2>
-      <span class="whole-block text-center">Nós estamos mais próximos do que você imagina.</span>
+    <div class="row">
+      <div class="col-xs-12 equipments-presentation page-presentation">
+        <h1 class="presentation-title"><span class="fa fa-print"></span> Fale Conosco</h1>
+        <span class="presentation-subtitle"><?php echo do_shortcode('[easy_options id="contactSubtitle"]'); ?></span>
+      </div>
     </div>
     <div class="row write-for-us">
       <div class="col-xs-12 col-md-4 left-side">
-        <h3 class="text-subtitle">Você pode escrever pra gente!</h3>
-        <span class="whole-block text-justify">Basta preencher o nosso formulário. Você tambem pode no enviar um email pelo nosso endereço:</span>
-        <a href=mailto:<?php echo do_shortcode('[easy_options id="contactmail"]'); ?>"><i class="fa fa-envelope-o" aria-hidden="true"></i> <?php echo do_shortcode('[easy_options id="contactmail"]'); ?> </a>
+        <h3 class="text-subtitle"><?php echo do_shortcode('[easy_options id="talktoustitle"]'); ?></h3>
+        <span class="whole-block text-justify"><?php echo do_shortcode('[easy_options id="talktoustext"]'); ?></span>
+        <a href="mailto:<?php echo do_shortcode('[easy_options id="contactmail"]'); ?>"><i class="fa fa-envelope-o" aria-hidden="true"></i> <?php echo do_shortcode('[easy_options id="contactmail"]'); ?> </a>
       </div>
       <div class="contact-form col-xs-12 col-md-8 right-side">
           <?php echo do_shortcode('[contact-form-7 id="4" title="Formulário de Contato"]'); ?>
@@ -23,8 +25,8 @@ get_header();
     </div>
     <div class="row avaliable">
       <div class="col-xs-12 col-md-4 left-side">
-        <h3 class="text-subtitle">Estamos à sua disposição</h3>
-        <span class="whole-block text-justify "> Fique à vontade. Você já tem o nosso número, acesso às nossas redes sociais, horário de funcionamento, e agora... você ja sabe o caminho</span>
+        <h3 class="text-subtitle"><?php echo do_shortcode('[easy_options id="avaliabletitle"]'); ?></h3>
+        <span class="whole-block text-justify "> <?php echo do_shortcode('[easy_options id="avaliabletext"]'); ?></span>
         <div class="map whole-block">
           <a  class="text-center whole-block text-white" target="_blank" href="https://www.google.com.br/maps/place/R.+Volunt%C3%A1rios+da+P%C3%A1tria,+2-55+-+Alto+Higien%C3%B3polis,+Bauru+-+SP,+17013-026/@-22.3221575,-49.067846,17z/data=!3m1!4b1!4m5!3m4!1s0x94bf67a36efff8d3:0x7c379602017ed2e!8m2!3d-22.3221575!4d-49.0656573"><i class="fa fa-map-marker" aria-hidden="true"></i> Como Chegar</a>
           <iframe class="whole-block" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14761.849781647483!2d-49.045308!3d-22.336161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e994bd98f29c8e7!2sCR+COPIADORAS+E+TECNOLOGIA!5e0!3m2!1spt-BR!2sbr!4v1511384283068" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
