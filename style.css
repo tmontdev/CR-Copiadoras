@@ -99,6 +99,12 @@ body left 0 {
 .shadown {
   background-color: #fafafa !important;
 }
+.text-title {
+  font-family: 'Ubuntu';
+}
+.text-title .text-subtitle {
+  font-family: 'Montserrat';
+}
 @media (max-width: 991px) {
   .desktop {
     display: none !important;
@@ -576,76 +582,43 @@ body left 0 {
     margin-top: 10vh !important;
   }
 }
-#about .about-slider {
-  height: 100%;
-  width: 100%;
-  float: left;
+#about .about-content {
+  padding: 0;
+  margin: 0;
 }
-#about .about-slider .slick-list {
-  height: 100% !important;
-  display: block;
-  z-index: 900;
+#about .about-content .about-item .container .about-item-field {
+  margin: 40px 0;
 }
-#about .about-slider .slick-list .slick-track {
-  height: 100%;
-  display: block;
+#about .about-content .about-item .container .about-item-field .about-item-content .text-title {
+  padding: 20px 0;
+  color: #000;
+  position: relative;
 }
-#about .about-slider .slick-list .slick-track .about-slide {
-  background-size: cover;
-  height: 100%;
-  display: block;
-}
-#about .about-slider .slick-list .slick-track .about-slide .overlay {
-  display: block;
-  height: 100%;
-  width: 100%;
-  float: left;
-  background-color: rgba(0,0,0,0.6);
-}
-#about .about-slider .slick-list .slick-track .about-slide .overlay .container {
-  height: 100%;
-  text-align: center;
-}
-#about .about-slider .slick-list .slick-track .about-slide .overlay .container .text-title {
-  padding-top: 20%;
-  color: #fff;
-  font-family: 'Ubuntu';
-  text-shadow: 0px 0px 5px #000;
-  font-size: 3vw;
+#about .about-content .about-item .container .about-item-field .about-item-content .text-title:after {
+  content: ' ';
+  background-color: #191919;
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 300px;
+  left: 0;
 }
 @media (max-width: 991px) {
-  #about .about-slider .slick-list .slick-track .about-slide .overlay .container .text-title {
-    font-size: 10vw;
+  #about .about-content .about-item .container .about-item-field .about-item-content .text-title:after {
+    left: 10%;
+    width: 200px;
   }
 }
-#about .about-slider .slick-list .slick-track .about-slide .overlay .container .text-subtitle {
-  color: #fff;
+#about .about-content .about-item .container .about-item-field .about-item-content .text-subtitle {
+  color: #808080;
+  padding: 30px 0;
+  text-align: justify;
   font-family: 'Montserrat';
-  font-weight: 300;
-  text-shadow: 0px 0px 5px #000;
-  font-size: 20px;
-  margin-bottom: 20px;
 }
-@media (max-width: 991px) {
-  #about .about-slider .slick-list .slick-track .about-slide .overlay .container .text-subtitle {
-    font-size: 4vw;
-    padding: 40% 5% 20% 5%;
-  }
-}
-#about .about-slider .slick-list .slick-track .about-slide .overlay .container a {
-  padding: 10px 5px;
-  color: #fff;
-  border-radius: 5px;
-  margin: auto;
-  width: 150px;
-  z-index: 1050;
-  font-family: 'Montserrat';
-  text-decoration: none;
-  transition: all 250ms ease-in-out;
-  box-shadow: 0px 0px 5px #000;
-}
-#about .about-slider .slick-list .slick-track .about-slide .overlay .container a:hover {
-  box-shadow: 0px 0px 5px #fff;
+#about .about-content .about-item .container .about-item-field .about-item-pic .about-item-img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
 .contact {
   font-family: 'Montserrat';

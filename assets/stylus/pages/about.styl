@@ -1,58 +1,36 @@
 #about
 	@media(max-width:992px)
 		margin-top 10vh !important
-	.about-slider
-		height 100%
-		width  100%
-		float left
-		.slick-list
-			height 100% !important
-			display block
-			z-index 900
-			.slick-track
-				height 100%
-				display block
-				.about-slide
-					background-size cover
-					height 100%
-					display block
-					.overlay
-						display block
-						height 100%
-						width 100%
-						float left
-						background-color alpha(black, 60%)
-						.container
-							height 100%
-							text-align center
-							.text-title
-								padding-top 20%
-								color white
-								font-family $font2
-								text-shadow 0px 0px 5px black
-								font-size 3vw
+	.about-content
+		padding 0
+		margin 0
+		.about-item
+			.container
+				.about-item-field
+					margin 40px 0
+					.about-item-content
+						.text-title
+							padding 20px 0
+							color black
+							position relative
+							&:after
+								content ' '
+								background-color #191919
+								position absolute
+								bottom 0
+								height 3px
+								width 300px
+								left 0
 								@media(max-width: 991px)
-									font-size 10vw
-							.text-subtitle
-								color white
-								font-family $font1
-								font-weight 300
-								text-shadow 0px 0px 5px black
-								font-size 20px
-								margin-bottom 20px
-								@media(max-width: 991px)
-									font-size 4vw
-									padding 40% 5% 20% 5%
-							a
-								padding 10px 5px
-								color white
-								border-radius 5px
-								margin auto
-								width 150px
-								z-index 1050
-								font-family $font1
-								text-decoration none
-								transition all 250ms ease-in-out
-								box-shadow 0px 0px 5px black
-								&:hover
-									box-shadow 0px 0px 5px white
+									left 10%
+									width 200px
+						.text-subtitle
+							color grey
+							padding 30px 0
+							text-align justify
+							font-family $font1
+					.about-item-pic
+						.about-item-img
+							display block
+							max-width 100%
+							max-height 100%

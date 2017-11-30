@@ -59,6 +59,47 @@ flush_rewrite_rules();
 
 
 <?php
+    add_action('init', 'service_register');
+
+    function service_register() {
+        $labels = array(
+            'name' => _x('Serviços', 'Serviços'),
+            'singular_name' => _x('Serviços', 'Serviço'),
+            'add_new' => _x('Adicionar Serviços', 'Novo Serviço'),
+            'add_new_item' => __('Novo Serviço'),
+            'edit_item' => __('Editar Serviço'),
+            'new_item' => __('Novo Serviço'),
+            'view_item' => __('Ver Serviço'),
+            'search_items' => __('Procurar Serviço'),
+            'not_found' =>  __('Nenhum Serviço encontrado'),
+            'not_found_in_trash' => __('Nenhum Serviço encontrado na lixeira'),
+            'parent_item_colon' => '',
+            'menu_name' => 'Serviços'
+        );
+
+        $args = array(
+            'labels' => $labels,
+            'public' => true,
+            'public_queryable' => true,
+            'show_ui' => true,
+            'query_var' => true,
+            'rewrite' => true,
+            'capability_type' => 'post',
+            'has_archive' => true,
+            'hierarchical' => false,
+            'menu_position' => null,
+            'menu_icon'   => 'dashicons-hammer',
+            'register_meta_box_cb' => 'Sobre_meta_box',
+            'supports' => array('title','editor','thumbnail')
+          );
+
+register_post_type( 'service' , $args );
+flush_rewrite_rules();
+}
+?>
+
+
+<?php
     add_action('init', 'slides_register');
 
     function slides_register() {

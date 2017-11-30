@@ -82,7 +82,7 @@
 							</a>
 						</li>
 						<li class="header-menu-item header-home col-xs-12 col-lg-2">
-							<a href="<?php echo get_home_url();?>" class="hearder-services-link whole-block">
+							<a href="<?php echo get_permalink(get_page_by_path('Serviços')); ?>" class="hearder-services-link whole-block">
 								<span class="icon fa fa-cog"></span>
 								<span class="header-menu-option">Serviços</span>
 							</a>
