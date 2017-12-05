@@ -43,11 +43,6 @@ body left 0 {
 .page-presentation {
   margin: 2% 0px;
 }
-@media (min-width: 992px) {
-  .first-section {
-    margin-top: 25vh;
-  }
-}
 @media (max-width: 991px) {
   .first-section {
     margin-top: 10vh;
@@ -102,7 +97,7 @@ body left 0 {
 .text-title {
   font-family: 'Ubuntu';
 }
-.text-title .text-subtitle {
+.text-subtitle {
   font-family: 'Montserrat';
 }
 @media (max-width: 991px) {
@@ -861,4 +856,62 @@ body left 0 {
 }
 #home .home-slider .slick-list .slick-track .slide .overlay .container a:hover {
   box-shadow: 0px 0px 5px #fff;
+}
+.services-content .container {
+  background-color: #fafafa;
+}
+.services-content .container .services-row .services-item {
+  margin: 20px 0;
+}
+.services-content .container .services-row .services-item .services-item-field {
+  background-color: #111;
+  border: solid 1px #fff;
+  color: #fff;
+  padding: 15px;
+  transition: all 250ms ease-in-out;
+}
+.services-content .container .services-row .services-item .services-item-field:hover {
+  background-color: #000;
+}
+.services-content .container .services-row .services-item .services-item-field .services-item-title {
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #fff;
+  font-size: 1.5em;
+}
+.services-content .container .services-row .services-item .services-item-field .services-item-exerpt {
+  display: block;
+  text-align: justify;
+  font-size: 1em;
+}
+.services-content .container .services-row .services-item .talk-to {
+  text-align: center;
+  border: solid 1px #fff;
+  background-color: #111;
+  transition: all 250ms ease-in-out;
+  color: #fff;
+}
+.services-content .container .services-row .services-item .talk-to:hover {
+  background-color: #000;
+  text-decoration: none;
+  text-shadow: 0px 0px 1px #fff;
+}
+.services-content .container .services-row .services-item .know-more {
+  text-align: center;
+  border: solid 1px #fff;
+  background-color: #111;
+  transition: all 250ms ease-in-out;
+  color: #fff;
+}
+.services-content .container .services-row .services-item .know-more:hover {
+  background-color: #000;
+  text-decoration: none;
+  text-shadow: 0px 0px 1px #fff;
+}
+.service-post .container .post-title h3,
+.service-post .container .post-title img {
+  max-width: 100%;
+  float: left;
+height
 }

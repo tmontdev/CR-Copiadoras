@@ -19,13 +19,14 @@ while($query->have_posts()) {
     'description' => get_the_excerpt(),
     'exerpt' => get_field('exerpt'),
     'icon' => get_field('icon'),
+    'link' => get_the_permalink()
   );
 
 }
 $posts = array_chunk($posts, 3);
 ?>
 
-<section class="first-section services" id="services">
+<section class="first-section services whole-block" id="services">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 equipments-presentation page-presentation">
@@ -42,22 +43,21 @@ $posts = array_chunk($posts, 3);
           <div class="col-xs-12 col-lg-4 services-item">
             <div class="services-item-field whole-block">
               <h2 class="services-item-title text-title"><?php echo $post['icon']; ?> <?php echo $post['title']; ?></h2>
-              <span class="services-item-exerpt text-sutitle"><?php echo $post['exerpt']; ?></span>
+              <span class="services-item-exerpt text-subtitle"><?php echo $post['exerpt']; ?></span>
             </div>
-            <div class="row services-item-entrance">
-              <div class="whole-block col-xs-6 talk-to">
-                <span class="fa fa-envelope-o"></span><span> Fale Conosco</span>
-              </div>
-              <div class="whole-block col-xs-6 know-more">
-                <span class="fa fa-info-circle"></span><span> Saiba Mais</span>
-              </div>
-            </div>
+            <a href="<?php echo get_permalink(get_page_by_path('contato')); ?>" class="whole-block col-xs-6 talk-to">
+              <span class="fa fa-envelope-o"></span><span> Fale Conosco</span>
+            </a>
+            <a href="<?php echo $post['link']; ?>" class="whole-block col-xs-6 know-more">
+              <span class="fa fa-info-circle"></span><span> Saiba Mais</span>
+            </a>
           </div>
         <?php endforeach;  wp_reset_query();?>
       </div>
       <?php } ?>
     </div>
   </div>
+</section>
 
 
 
