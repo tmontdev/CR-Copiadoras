@@ -842,6 +842,11 @@ body left 0 {
   font-size: 20px;
   margin-bottom: 20px;
 }
+@media (max-width: 991px) {
+  #home .home-slider .slick-list .slick-track .slide .overlay .container .text-subtitle {
+    margin-bottom: 50vh;
+  }
+}
 #home .home-slider .slick-list .slick-track .slide .overlay .container a {
   padding: 10px 5px;
   color: #fff;
@@ -909,9 +914,32 @@ body left 0 {
   text-decoration: none;
   text-shadow: 0px 0px 1px #fff;
 }
-.service-post .container .post-title h3,
-.service-post .container .post-title img {
+.service-post .container .post-header {
+  text-align: center;
+}
+.service-post .container .post-header .post-title h3 {
+  text-align: center;
+  padding: 5%;
+}
+.service-post .container .post-header .post-title .service-post-img-field {
+  background-color: #fafafa;
+  padding: 0 40px;
+  text-align: center;
+}
+.service-post .container .post-header .post-title .service-post-img-field img {
   max-width: 100%;
-  float: left;
-height
+  height: auto;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+@media (max-width: 991px) {
+  .service-post .container .post-header .post-title .service-post-img-field img {
+    max-height: 20vh !important;
+  }
+}
+@media (min-width: 992px) {
+  .service-post .container .post-header .post-title .service-post-img-field img {
+    max-height: 50vh !important;
+  }
 }

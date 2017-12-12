@@ -26,7 +26,7 @@
 				<div class="row">
 					<div class="col-xs-12 logo-square">
 						<a href="<?php echo get_home_url();?>" class="whole-block">
-							<img src="<?php echo get_template_directory_uri();?>/assets/img/logo-string-white.png">
+							<img src="<?php echo get_template_directory_uri();?>/assets/img/logo-string-white2.png">
 						</a>
 					</div>
 				</div>
@@ -38,7 +38,7 @@
 			<div class="container">
 				<div class="col-lg-3 logo-header-desktop desktop">
 					<a href="<?php echo get_home_url();?>" class="whole-block text-center">
-						<img src="<?php echo get_template_directory_uri();?>/assets/img/logo-string-white.png" alt="">
+						<img src="<?php echo get_template_directory_uri();?>/assets/img/logo-string-white2.png" alt="">
 					</a>
 				</div>
 				<div class="col-xs-12 col-lg-4 header-info-address text-white">

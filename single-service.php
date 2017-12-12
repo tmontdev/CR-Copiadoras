@@ -16,7 +16,10 @@
     <div class="row post-header">
       <div class="col-xs-12 post-title text-center">
         <h3 class="text-title text-green"><?php echo get_field('icon'); ?> <?php echo the_title(); ?></h3>
-        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+				<div class="service-post-img-field whole-block">
+					<img class="service-post-img" align="middle" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+				</div>
+
       </div>
     </div>
     <div class="row post-content">
