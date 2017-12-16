@@ -19,7 +19,7 @@ get_header();
         <a href="mailto:<?php echo do_shortcode('[easy_options id="contactmail"]'); ?>"><i class="fa fa-envelope-o" aria-hidden="true"></i> <?php echo do_shortcode('[easy_options id="contactmail"]'); ?> </a>
       </div>
       <div class="contact-form col-xs-12 col-md-8 right-side">
-          <?php echo do_shortcode('[contact-form-7 id="4" title="Formulário de Contato"]'); ?>
+          <?php echo do_shortcode('[contact-form-7 id="73" title="Formulário"]'); ?>
       </div>
 
     </div>
@@ -64,7 +64,7 @@ get_header();
           <h4 class="text-subtitle">Redes Sociais</h4>
           <div class="col-field whole-block">
             <div class="line-query whole-block">
-              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FClubedosOgros%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcrcopiadorasetecnologia&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
             <div class="line-query whole-block">
               <a target="_blank" href="https://www.facebook.com/ConceptionEngenharia/">
                 <div class="col-xs-4 ct-fb">

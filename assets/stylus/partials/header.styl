@@ -3,12 +3,13 @@
   .mobile-fixed-header
     position fixed
     height 10vh
-    background-color black
+    background-color white
     width 100vw
     float left
     top 0
     left 0
     z-index 999
+    border-bottom solid 1px black
     .hollback-area:not(.on)
       background-color transparent
       width 0px !important
@@ -17,8 +18,8 @@
     .hollback-area
       position fixed
       width 100vw
-      height 100vh
-      top 0
+      height 90vh
+      top 10vh
       right 0
       opacity 1
       float left
@@ -37,7 +38,7 @@
         width 100%
         float left
         text-align center
-        color white
+        color black
         font-size 9vw
     .mobile-header-logo
       display block
@@ -58,19 +59,21 @@
                 padding 2vh 0vh 2vh 4vh
   .header-field
     .header-info
-      background-color black
+      background-color white !important
       height 15vh
       transition all 250ms ease-in-out
+      color black !important
+      border-bottom solid 1px black
       @media(max-width: 992px)
         position fixed
         z-index 1050
         width 40vw
-        box-shadow 0px 0px 10px black
+        border-bottom solid 1px black
       @media(max-width: 500px)
         position fixed
         z-index 1050
         width 70vw
-        box-shadow 0px 0px 10px black
+        border-bottom solid 1px black
       //Tamanho em mobile definido por JS
       .container
         .logo-header-desktop
@@ -100,7 +103,7 @@
               font-size 2.2vh
               width 100%
               float left
-              color white
+              color black
               text-decoration none
               &:hover
                 text-decoration none
@@ -131,7 +134,7 @@
             font-size 2.2vh
             width 100%
             float left
-            color white
+            color black
             text-decoration none
             display block
             &:hover
@@ -148,19 +151,20 @@
       transition all 250ms ease-in-out
       display block
       border-top solid 1px white
-      background-color black
+      background-color white
       width 100%
       float left
       height 60px
       border-bottom solid 1px white
+      @media(min-width: 992px)
+        color white !important
+        background-color black !important
       @media(max-width:500px)
         width 70vw !important
-        box-shadow 0px 0px 10px black
       @media(max-width:992px)
         width 40vw
         height auto
         float left
-        box-shadow 0px 0px 10px black
         position fixed
         top 10vh
         z-index 1050
@@ -173,7 +177,9 @@
             @media(max-width: 992px)
               padding 0
             a
-              color white
+              color black
+              @media(min-width:992px)
+                color white !important
               text-decoration none
               text-transform uppercase
               font-family 'Ubuntu'
@@ -181,6 +187,7 @@
               font-size 13px
               @media(min-width:1200px)
                 font-size 17px
+                color white !important
               @media(max-width: 992px)
                 font-size 17px
             a:not(.col-xs-4)
@@ -189,14 +196,17 @@
               text-align left
               @media(min-width: 992px)
                 text-align center !important
+                color white !important
             a.col-xs-4
               font-size 15px
+              color white !important
               @media(min-width 1200px)
                 font-size 20px
               @media(max-width:992px)
                 font-size 25px
                 text-align center
                 padding 5% 0%
+                color black !important
   .header-field:not(.on)
     transition all 250ms ease-in-out
     @media(max-width: 992px)
@@ -207,7 +217,7 @@
       transition all 250ms ease-in-out
     .header-info
       transition all 250ms ease-in-out
-      background-color black
+      background-color white
       height 15vh
       transition all 250ms ease-in-out
       @media(max-width: 992px)
@@ -244,7 +254,7 @@
               font-size 2.2vh
               width 100%
               float left
-              color white
+              color black
               text-decoration none
               &:hover
                 text-decoration none
@@ -269,7 +279,7 @@
             font-size 2.2vh
             width 100%
             float left
-            color white
+            color black
             text-decoration none
             display block
             &:hover
@@ -282,7 +292,7 @@
       transition all 250ms ease-in-out
       display block
       border-top solid 1px white
-      background-color black
+      background-color white
       width 100%
       float left
       height 60px
@@ -307,7 +317,7 @@
             @media(max-width: 992px)
               padding 0
             a
-              color white
+              color black
               text-decoration none
               text-transform uppercase
               font-family 'Ubuntu'

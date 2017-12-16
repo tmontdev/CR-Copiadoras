@@ -26,7 +26,7 @@
 				<div class="row">
 					<div class="col-xs-12 logo-square">
 						<a href="<?php echo get_home_url();?>" class="whole-block">
-							<img src="<?php echo get_template_directory_uri();?>/assets/img/logo-string-white2.png">
+							<img src="<?php echo get_template_directory_uri();?>/assets/img/logo-string-black2.png">
 						</a>
 					</div>
 				</div>
@@ -38,7 +38,7 @@
 			<div class="container">
 				<div class="col-lg-3 logo-header-desktop desktop">
 					<a href="<?php echo get_home_url();?>" class="whole-block text-center">
-						<img src="<?php echo get_template_directory_uri();?>/assets/img/logo-string-white2.png" alt="">
+						<img src="<?php echo get_template_directory_uri();?>/assets/img/logo-string-black2.png" alt="">
 					</a>
 				</div>
 				<div class="col-xs-12 col-lg-4 header-info-address text-white">
@@ -95,14 +95,13 @@
 						</li>
 						<li class="header-menu-item header-home col-xs-12 col-lg-2">
 							<div class="row">
-								<a href="https://www.facebook.com/crsolucoes.digitais" class="hearder-fb-link col-xs-4">
+								<a href="<?php echo do_shortcode('[easy_options id="fblink"]'); ?>" class="hearder-fb-link col-xs-4">
 									<span class="icon fa fa-facebook"></span>
 								</a>
-								<a href="https://www.facebook.com/crsolucoes.digitais" class="hearder-insta-link col-xs-4">
+								<a href="<?php echo do_shortcode('[easy_options id="lilink"]'); ?>" class="hearder-insta-link col-xs-4">
 									<span class="icon fa fa-instagram"></span>
 								</a>
-								<a href="https://www.facebook.com/crsolucoes.digitais" class="hearder-youtube-link col-xs-4">
-									<span class="icon fa fa-youtube"></span>
+								<a href="<?php echo do_shortcode('[easy_options id="instalink"]'); ?>" class="hearder-youtube-link col-xs-4"> <span class="icon fa fa-youtube"></span>
 								</a>
 							</div>
 						</li>
