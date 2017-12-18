@@ -98,7 +98,7 @@ body left 0 {
   font-family: 'Ubuntu';
 }
 .text-subtitle {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat' !important;
 }
 @media (max-width: 991px) {
   .desktop {
@@ -593,6 +593,12 @@ body left 0 {
     margin-top: 10vh !important;
   }
 }
+#about .alignnone {
+  max-width: 150px;
+  max-height: 150px;
+  height: auto;
+  width: auto;
+}
 #about .about-content {
   padding: 0;
   margin: 0;
@@ -709,8 +715,15 @@ body left 0 {
 .avaliable .col-field .line-query {
   margin: 2% 0;
 }
+.avaliable .col-field .line-query:hover {
+  text-decoration: none !important;
+}
 .avaliable .col-field .line-query h5 {
   color: #000;
+  text-decoration: none !important;
+}
+.avaliable .col-field .line-query h5:hover {
+  text-decoration: none !important;
 }
 .avaliable .col-field .line-query span {
   color: #808080;
@@ -929,6 +942,50 @@ body left 0 {
   background-color: #000;
   text-decoration: none;
   text-shadow: 0px 0px 1px #fff;
+}
+.equipment-post .container .post-header {
+  text-align: center;
+  border-bottom: solid 1px #000;
+}
+.equipment-post .container .post-header .post-title h3 {
+  text-align: center;
+  padding-top: 25%;
+}
+.equipment-post .container .post-header .post-title .equipment-post-img {
+  background-color: #fafafa;
+  padding: 0 40px;
+  text-align: center;
+}
+.equipment-post .container .post-header .post-title .equipment-post-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+@media (max-width: 991px) {
+  .equipment-post .container .post-header .post-title .equipment-post-img img {
+    max-height: 20vh !important;
+  }
+}
+@media (min-width: 992px) {
+  .equipment-post .container .post-header .post-title .equipment-post-img img {
+    max-height: 50vh !important;
+  }
+}
+.equipment-post .container .post-content,
+.equipment-post .container .post-info {
+  text-align: justify;
+  padding-top: 20px;
+}
+.equipment-post .container .post-info {
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.equipment-post .container .post-info .post-info-line {
+  padding: 5px 0;
+  font-size: 1.3em;
 }
 .service-post .container .post-header {
   text-align: center;

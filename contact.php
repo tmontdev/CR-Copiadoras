@@ -28,31 +28,31 @@ get_header();
         <h3 class="text-subtitle"><?php echo do_shortcode('[easy_options id="avaliabletitle"]'); ?></h3>
         <span class="whole-block text-justify "> <?php echo do_shortcode('[easy_options id="avaliabletext"]'); ?></span>
         <div class="map whole-block">
-          <a  class="text-center whole-block text-white" target="_blank" href="https://www.google.com.br/maps/place/R.+Volunt%C3%A1rios+da+P%C3%A1tria,+2-55+-+Alto+Higien%C3%B3polis,+Bauru+-+SP,+17013-026/@-22.3221575,-49.067846,17z/data=!3m1!4b1!4m5!3m4!1s0x94bf67a36efff8d3:0x7c379602017ed2e!8m2!3d-22.3221575!4d-49.0656573"><i class="fa fa-map-marker" aria-hidden="true"></i> Como Chegar</a>
+          <a  class="text-center whole-block text-white" target="_blank" href="<?php echo do_shortcode('[easy_options id="MapsLink"]'); ?>"><i class="fa fa-map-marker" aria-hidden="true"></i> Como Chegar</a>
           <iframe class="whole-block" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14761.849781647483!2d-49.045308!3d-22.336161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e994bd98f29c8e7!2sCR+COPIADORAS+E+TECNOLOGIA!5e0!3m2!1spt-BR!2sbr!4v1511384283068" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
       <div class="col-xs-12 col-md-4 center-side">
         <h4 class="text-subtitle">Informações</h4>
         <div class="col-field whole-block">
-          <div class="line-query whole-block">
+          <a href="<?php echo do_shortcode('[easy_options id="MapsLink"]'); ?>" class="line-query whole-block">
             <h5 class="text-subtitle no-padding"> <i class="fa fa-map-o" aria-hidden="true"></i> Endereço</h5>
             <span class="whole-block pad"><?php echo do_shortcode('[easy_options id="addressfirstpart"]'); ?></span>
             <span class="whole-block pad"><?php echo do_shortcode('[easy_options id="addresssecondpart"]'); ?></span>
-          </div>
+          </a>
           <div class="line-query whole-block">
             <h5 class="text-subtitle no-padding"> <i class="fa fa-clock-o" aria-hidden="true"></i> Horário de Funcionamento</h5>
             <span class="whole-block pad"><?php echo do_shortcode('[easy_options id="timing1"]'); ?></span>
             <span class="whole-block pad"><?php echo do_shortcode('[easy_options id="timing2"]'); ?></span>
           </div>
-          <div class="line-query whole-block">
+          <a href="https://api.whatsapp.com/send?phone=<?php echo do_shortcode('[easy_options id="WhatsAppLink"]'); ?>&text=Olá,%20estou%20dando%20uma%20olhada%20no%20seu%20site!%20" class="line-query whole-block">
             <h5 class="text-subtitle no-padding"> <i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp</h5>
-            <span class="whole-block pad"><?php echo do_shortcode('[easy_options id="contactphone1"]'); ?></span>
-          </div>
-          <div class="line-query whole-block">
+            <span class="whole-block pad"><?php echo do_shortcode('[easy_options id="WhatsApp"]'); ?></span>
+          </a>
+          <a href="tel:<?php echo do_shortcode('[easy_options id="contactphone2unform"]'); ?>" class="line-query whole-block">
             <h5 class="text-subtitle no-padding"> <i class="fa fa-phone" aria-hidden="true"></i> Telefone</h5>
             <span class="whole-block pad"><?php echo do_shortcode('[easy_options id="contactphone2"]'); ?></span>
-          </div>
+          </a>
           <div class="line-query whole-block">
             <h5 class="text-subtitle no-padding"> <i class="fa fa-envelope-o" aria-hidden="true"></i> E-mail</h5>
             <a href="mailto:<?php echo do_shortcode('[easy_options id="contactmail"]'); ?>"><span class="whole-block pad"><?php echo do_shortcode('[easy_options id="contactmail"]'); ?></span></a>
