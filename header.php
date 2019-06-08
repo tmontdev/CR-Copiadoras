@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.com" media="screen" title="animate" charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<?php wp_head();?>
-</head>
 <body>
 <header class="header" id="header">
 	<div class="mobile mobile-fixed-header whole-block">
@@ -82,7 +81,7 @@
 							</a>
 						</li>
 						<li class="header-menu-item header-home col-xs-12 col-lg-2">
-							<a href="<?php echo get_permalink(get_page_by_title('Serviços')); ?>" class="hearder-services-link whole-block">
+							<a href="<?php echo get_permalink(get_page_by_path('servicos')); ?>" class="hearder-services-link whole-block">
 								<span class="icon fa fa-cog"></span>
 								<span class="header-menu-option">Serviços</span>
 							</a>
